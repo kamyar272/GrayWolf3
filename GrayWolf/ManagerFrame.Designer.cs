@@ -139,7 +139,6 @@
             this.navBarControl1.BackColor = System.Drawing.Color.Maroon;
             this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navBarControl1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.navBarControl1.GroupBackgroundImage = global::GrayWolf.Properties.Resources.bk;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1,
             this.navBarGroup2,
@@ -352,14 +351,14 @@
             // 
             this.navBarItem13.Name = "navBarItem13";
             // 
-            // Form2
+            // ManagerFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(700, 443);
             this.Controls.Add(this.splitContainerControl1);
-            this.Name = "Form2";
+            this.Name = "ManagerFrame";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "فرم مدیر سامانه";
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();

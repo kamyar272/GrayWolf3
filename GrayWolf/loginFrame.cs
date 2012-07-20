@@ -21,6 +21,7 @@ namespace GrayWolf
         {
             string user = textBox1.Text;
             string pass = textBox2.Text;
+            
             if (user == "kamyar")
                 if (pass == "kamyar")
                 {
@@ -58,11 +59,8 @@ namespace GrayWolf
             
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+      
+     
         
 
         

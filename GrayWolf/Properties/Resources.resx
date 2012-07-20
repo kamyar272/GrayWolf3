@@ -118,16 +118,5 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bk.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Stones_with_grass_by_Pollon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Stones_with_grass_by_Pollon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Grass_Texture_by_Holly66696" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Grass_Texture_by_Holly66696.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bk1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-</root>
+  
+ </root>
