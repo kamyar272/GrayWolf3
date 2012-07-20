@@ -60,6 +60,7 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "مشاهده اطلاعات";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // richTextBox1
             // 
@@ -102,12 +103,12 @@
             this.textBox1.Size = new System.Drawing.Size(142, 20);
             this.textBox1.TabIndex = 20;
             // 
-            // UserControl1
+            // UserInfoView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.xtraScrollableControl1);
-            this.Name = "UserControl1";
+            this.Name = "UserInfoView";
             this.Size = new System.Drawing.Size(400, 300);
             this.xtraScrollableControl1.ResumeLayout(false);
             this.xtraScrollableControl1.PerformLayout();

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -19,7 +20,6 @@ namespace GrayWolf
         private void button1_Click(object sender, EventArgs e)
         {
             listBox1.Items.Insert(0, "محمد درخشانی");
-            
             listBox1.Items.Insert(1, "محمد رضائیان");
             listBox1.Items.Insert(2, "محمد محرابیان");
 
@@ -27,6 +27,9 @@ namespace GrayWolf
 
         private void button2_Click(object sender, EventArgs e)
         {
+            StreamWriter user = new StreamWriter("user.txt");
+            user.WriteLine(textBox1.Text);
+            user.Close();
             foreach (Control ctrl1 in panelControl1.Controls)
             {
                 ctrl1.Dispose();

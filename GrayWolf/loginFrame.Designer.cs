@@ -89,7 +89,6 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "ورود";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
@@ -100,7 +99,6 @@
             this.textBox2.Size = new System.Drawing.Size(158, 20);
             this.textBox2.TabIndex = 14;
             this.textBox2.Text = "Password";
-            this.textBox2.UseWaitCursor = true;
             // 
             // textBox1
             // 
@@ -109,7 +107,6 @@
             this.textBox1.Size = new System.Drawing.Size(158, 20);
             this.textBox1.TabIndex = 13;
             this.textBox1.Text = "username";
-            this.textBox1.UseWaitCursor = true;
             // 
             // label2
             // 

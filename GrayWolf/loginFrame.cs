@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,48 +20,88 @@ namespace GrayWolf
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string remived;
             string user = textBox1.Text;
             string pass = textBox2.Text;
-            
-            if (user == "kamyar")
-                if (pass == "kamyar")
+            StreamReader tr2 = new StreamReader("removeds.txt");
+            while (true)
+            {
+                remived = NextWord(tr2);
+                if (remived == "")
                 {
-                    var regionReq = new ManagerFrame();
-                    regionReq.ShowDialog();
-                    //MessageBox.Show("kamyar signed in");
+                    break;
                 }
-                else
+                if (textBox1.Text == remived)
                 {
-                    MessageBox.Show("کلمه عبور با شناسه مطابقت ندارد");
+                    MessageBox.Show("نام کاربری وارد شده فعلا مسدود میباشد");
+                    tr2.Close();
+                    return;
                 }
-            if(user=="momeni")
-                if (pass == "rad")
-                {
-                    var regionReq = new expertFrame();
-                    regionReq.ShowDialog();
-                    
-                }
-                else
-                {
-                    MessageBox.Show("کلمه عبور با شناسه مطابقت ندارد");
-                }
-            if (user == "test")
-                if (pass == "test")
-                {
-                    var regionReq = new userFrame();
-
-                    regionReq.ShowDialog();
-
-                }
-                else
-                {
-                    MessageBox.Show("کلمه عبور با شناسه مطابقت ندارد");
-                }
-            
+            }
+            tr2.Close();
+            StreamReader tr = new StreamReader("usernames.txt");
+            bool flag = false;
+            while (true)
+            {
+                string TPuser = NextWord(tr);
+                if (TPuser == "")
+                    break;
+                string TPpass = NextWord(tr);
+                string TProle = NextWord(tr);
+                if (TPuser == user)
+                    if (TPpass == pass)
+                    {
+                        flag = true;
+                        tr.Close();
+                        
+                        if (TProle == "2")
+                        {
+                            var regionReq = new ManagerFrame();
+                            regionReq.ShowDialog();
+                        }
+                        if (TProle == "1")
+                        {
+                            var regionReq = new expertFrame();
+                            regionReq.ShowDialog();
+                        }
+                        if (TProle == "0")
+                        {
+                            var regionReq = new userFrame();
+                            regionReq.ShowDialog();
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        MessageBox.Show("کلمه عبور با شناسه مطابقت ندارد");
+                        break;
+                    }
+               
+            }
+            if(!flag)
+                   MessageBox.Show("کاربری با این نام در سیستم ثبت نشده است.");
+                       
         }
 
-        
-      
+
+        string NextWord(StreamReader s)
+        {
+            int c = s.Peek();
+            while (c != -1 && Char.IsWhiteSpace(Convert.ToChar(c)))
+            {
+                s.Read();
+                c = s.Peek();
+            }
+            if (c == -1) return "";
+            StringBuilder b = new StringBuilder();
+            while (c != -1 && !Char.IsWhiteSpace(Convert.ToChar(c)))
+            {
+                b.Append(Convert.ToChar(c));
+                s.Read();
+                c = s.Peek();
+            }
+            return b.ToString();
+        }
      
         
 
