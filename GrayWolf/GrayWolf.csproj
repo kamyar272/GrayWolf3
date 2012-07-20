@@ -52,11 +52,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="companyReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="companyReg.Designer.cs">
+      <DependentUpon>companyReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultInv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DefaultInv.Designer.cs">
+      <DependentUpon>DefaultInv.cs</DependentUpon>
+    </Compile>
     <Compile Include="DefaultManager.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DefaultManager.Designer.cs">
       <DependentUpon>DefaultManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocInv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DocInv.Designer.cs">
+      <DependentUpon>DocInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditInv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditInv.Designer.cs">
+      <DependentUpon>EditInv.cs</DependentUpon>
     </Compile>
     <Compile Include="loginFrame.cs">
       <SubType>Form</SubType>
@@ -70,14 +94,44 @@
     <Compile Include="ManagerFrame.Designer.cs">
       <DependentUpon>ManagerFrame.cs</DependentUpon>
     </Compile>
-    <Compile Include="SystemUserFrame.cs">
+    <Compile Include="expertFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SystemUserFrame.Designer.cs">
-      <DependentUpon>SystemUserFrame.cs</DependentUpon>
+    <Compile Include="expertFrame.Designer.cs">
+      <DependentUpon>expertFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Morethan3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Morethan3.Designer.cs">
+      <DependentUpon>Morethan3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewInv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewInv.Designer.cs">
+      <DependentUpon>NewInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PricingInv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PricingInv.Designer.cs">
+      <DependentUpon>PricingInv.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReconsiderInv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReconsiderInv.Designer.cs">
+      <DependentUpon>ReconsiderInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="roleSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +140,12 @@
     </Compile>
     <Compile Include="roleInfoChange.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchInv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchInv.Designer.cs">
+      <DependentUpon>SearchInv.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl11.Designer.cs">
       <DependentUpon>roleInfoChange.cs</DependentUpon>
@@ -113,6 +173,12 @@
     </Compile>
     <Compile Include="expertReport.Designer.cs">
       <DependentUpon>expertReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userFrame.Designer.cs">
+      <DependentUpon>userFrame.cs</DependentUpon>
     </Compile>
     <Compile Include="userReport.cs">
       <SubType>UserControl</SubType>
@@ -252,8 +318,20 @@
     <Compile Include="addField.Designer.cs">
       <DependentUpon>addField.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="companyReg.resx">
+      <DependentUpon>companyReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefaultInv.resx">
+      <DependentUpon>DefaultInv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DefaultManager.resx">
       <DependentUpon>DefaultManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocInv.resx">
+      <DependentUpon>DocInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInv.resx">
+      <DependentUpon>EditInv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginFrame.resx">
       <DependentUpon>loginFrame.cs</DependentUpon>
@@ -261,8 +339,17 @@
     <EmbeddedResource Include="ManagerFrame.resx">
       <DependentUpon>ManagerFrame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SystemUserFrame.resx">
-      <DependentUpon>SystemUserFrame.cs</DependentUpon>
+    <EmbeddedResource Include="expertFrame.resx">
+      <DependentUpon>expertFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Morethan3.resx">
+      <DependentUpon>Morethan3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewInv.resx">
+      <DependentUpon>NewInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PricingInv.resx">
+      <DependentUpon>PricingInv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -275,8 +362,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReconsiderInv.resx">
+      <DependentUpon>ReconsiderInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="roleSearch.resx">
       <DependentUpon>roleSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchInv.resx">
+      <DependentUpon>SearchInv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl11.resx">
       <DependentUpon>roleInfoChange.cs</DependentUpon>
@@ -292,6 +388,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="expertReport.resx">
       <DependentUpon>expertReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userFrame.resx">
+      <DependentUpon>userFrame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userReport.resx">
       <DependentUpon>userReport.cs</DependentUpon>

@@ -91,6 +91,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(212, 20);
             this.textBox1.TabIndex = 8;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -114,14 +115,14 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "نام کاربری";
             // 
-            // Form1
+            // loginFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 337);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
+            this.Name = "loginFrame";
             this.Text = "ورود";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

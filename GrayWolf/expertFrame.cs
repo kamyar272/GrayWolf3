@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace GrayWolf
 {
-    public partial class SystemUserFrame : Form
+    public partial class expertFrame : Form
     {
-        public SystemUserFrame()
+        public expertFrame()
         {
             InitializeComponent();
         }

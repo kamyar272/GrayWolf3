@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Graywolf;
 
 namespace GrayWolf
 {
@@ -34,7 +35,7 @@ namespace GrayWolf
             if(user=="momeni")
                 if (pass == "rad")
                 {
-                    var regionReq = new SystemUserFrame();
+                    var regionReq = new expertFrame();
                     regionReq.ShowDialog();
                     
                 }
@@ -42,8 +43,27 @@ namespace GrayWolf
                 {
                     MessageBox.Show("کلمه عبور با شناسه مطابقت ندارد");
                 }
+            if (user == "test")
+                if (pass == "test")
+                {
+                    var regionReq = new userFrame();
+
+                    regionReq.ShowDialog();
+
+                }
+                else
+                {
+                    MessageBox.Show("کلمه عبور با شناسه مطابقت ندارد");
+                }
             
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
 
         
     }

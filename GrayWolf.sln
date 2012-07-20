@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrayWolf", "GrayWolf\GrayWolf.csproj", "{BC2035C6-D427-461B-9F55-E8865A15E401}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "invention2", "C:\Users\mohsen\Documents\Visual Studio 2010\Projects\invention2\invention2\invention2.csproj", "{37832525-70F2-4565-81EC-922C6DF21762}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,10 +13,6 @@ Global
 		{BC2035C6-D427-461B-9F55-E8865A15E401}.Debug|x86.Build.0 = Debug|x86
 		{BC2035C6-D427-461B-9F55-E8865A15E401}.Release|x86.ActiveCfg = Release|x86
 		{BC2035C6-D427-461B-9F55-E8865A15E401}.Release|x86.Build.0 = Release|x86
-		{37832525-70F2-4565-81EC-922C6DF21762}.Debug|x86.ActiveCfg = Debug|x86
-		{37832525-70F2-4565-81EC-922C6DF21762}.Debug|x86.Build.0 = Debug|x86
-		{37832525-70F2-4565-81EC-922C6DF21762}.Release|x86.ActiveCfg = Release|x86
-		{37832525-70F2-4565-81EC-922C6DF21762}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
