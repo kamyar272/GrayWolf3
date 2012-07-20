@@ -90,6 +90,7 @@
             this.button1.Text = "ورود";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.UseWaitCursor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
