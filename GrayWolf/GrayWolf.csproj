@@ -153,6 +153,7 @@
     <Compile Include="SearchInv.Designer.cs">
       <DependentUpon>SearchInv.cs</DependentUpon>
     </Compile>
+    <Compile Include="user.cs" />
     <Compile Include="UserControl11.Designer.cs">
       <DependentUpon>roleInfoChange.cs</DependentUpon>
     </Compile>

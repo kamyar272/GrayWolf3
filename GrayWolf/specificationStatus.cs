@@ -83,6 +83,16 @@ namespace GrayWolf
             }
             return b.ToString();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("تایید شما موقتا ذخیره شد");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("عدم تایید شما موقتا ذخیره شد");
+        }
         
     }
 }

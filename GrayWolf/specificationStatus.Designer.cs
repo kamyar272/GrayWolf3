@@ -52,6 +52,7 @@
             this.button5.TabIndex = 17;
             this.button5.Text = "تایید";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -61,6 +62,7 @@
             this.button6.TabIndex = 16;
             this.button6.Text = "عدم تایید";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label4
             // 

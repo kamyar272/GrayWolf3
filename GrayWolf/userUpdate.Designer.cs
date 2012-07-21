@@ -116,7 +116,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "فروردین",
-            "اردی بهشت",
+            "اردیبهشت",
             "خرداد",
             "تیر",
             "مرداد",

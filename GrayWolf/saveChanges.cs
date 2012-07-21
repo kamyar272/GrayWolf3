@@ -19,11 +19,14 @@ namespace GrayWolf
         private void button11_Click(object sender, EventArgs e)
         {
             dbm.saveBuffer();
+            MessageBox.Show("ازریابی های شما کارشناس محترم ، ذخیره شد");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             dbm.discardBuffer();
+            MessageBox.Show("اطلاعات ازریابیهای این پرونده دور ریخته شد");
+            //return;
         }
     }
 }
