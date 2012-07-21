@@ -188,6 +188,7 @@
             this.button11.TabIndex = 4;
             this.button11.Text = "ذخیره و خروج";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -197,15 +198,16 @@
             this.button12.TabIndex = 5;
             this.button12.Text = "عدم ذخیره و خروج";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // UserControl28
+            // saveChanges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button12);
-            this.Name = "UserControl28";
+            this.Name = "saveChanges";
             this.Size = new System.Drawing.Size(411, 356);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

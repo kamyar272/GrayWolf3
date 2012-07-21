@@ -15,5 +15,15 @@ namespace GrayWolf
         {
             InitializeComponent();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            dbm.saveBuffer();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            dbm.discardBuffer();
+        }
     }
 }

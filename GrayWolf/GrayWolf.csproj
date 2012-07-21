@@ -58,6 +58,7 @@
     <Compile Include="companyReg.Designer.cs">
       <DependentUpon>companyReg.cs</DependentUpon>
     </Compile>
+    <Compile Include="dbm.cs" />
     <Compile Include="DefaultInv.cs">
       <SubType>UserControl</SubType>
     </Compile>

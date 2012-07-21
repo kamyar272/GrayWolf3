@@ -29,7 +29,8 @@ namespace GrayWolf
             user.Write(comboBox1.Text + " ");
             user.Write(comboBox2.Text + " ");
             user.WriteLine(comboBox3.Text);
-
+            user update= new GrayWolf.user(textBox3.Text,textBox2.TabIndex,new DateTime(comboBox1.SelectedIndex,comboBox2.SelectedIndex,comboBox3.SelectedIndex));
+            dbm.userUpdate(update);
             MessageBox.Show("اطلاعات کاربر بازنویسی شد");
             user.Close();
 
