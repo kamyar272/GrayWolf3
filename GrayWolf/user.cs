@@ -10,7 +10,7 @@ namespace GrayWolf
         public string name;
         public int UID;
         public DateTime membershipDate;
-        user(string name, int UID, DateTime date)
+        public user(string name, int UID, DateTime date)
         {
             this.UID = UID;
             this.name = name;
