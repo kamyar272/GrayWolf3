@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,13 @@ namespace GrayWolf
             expertTransition uc22 = new expertTransition();
             uc22.Dock = DockStyle.Fill;
             panelControl1.Controls.Add(uc22);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StreamWriter inv = new StreamWriter("inv.txt");
+            inv.Write(this.listBox1.Text);
+            inv.Close();
         }
     }
 }

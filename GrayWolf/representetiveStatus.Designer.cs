@@ -95,6 +95,7 @@
             // 
             this.richTextBox3.Location = new System.Drawing.Point(22, 128);
             this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richTextBox3.Size = new System.Drawing.Size(451, 104);
             this.richTextBox3.TabIndex = 19;
             this.richTextBox3.Text = "";
@@ -112,6 +113,7 @@
             // 
             this.richTextBox2.Location = new System.Drawing.Point(22, 25);
             this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richTextBox2.Size = new System.Drawing.Size(451, 97);
             this.richTextBox2.TabIndex = 17;
             this.richTextBox2.Text = "";
@@ -125,12 +127,12 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "مفاد ادعا نامه";
             // 
-            // UserControl24
+            // representetiveStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.xtraScrollableControl1);
-            this.Name = "UserControl24";
+            this.Name = "representetiveStatus";
             this.Size = new System.Drawing.Size(594, 402);
             this.xtraScrollableControl1.ResumeLayout(false);
             this.xtraScrollableControl1.PerformLayout();

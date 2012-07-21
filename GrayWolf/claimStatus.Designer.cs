@@ -86,6 +86,7 @@
             // 
             this.richTextBox7.Location = new System.Drawing.Point(24, 136);
             this.richTextBox7.Name = "richTextBox7";
+            this.richTextBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richTextBox7.Size = new System.Drawing.Size(463, 98);
             this.richTextBox7.TabIndex = 10;
             this.richTextBox7.Text = "";
@@ -103,11 +104,12 @@
             // 
             this.richTextBox6.Location = new System.Drawing.Point(24, 25);
             this.richTextBox6.Name = "richTextBox6";
+            this.richTextBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richTextBox6.Size = new System.Drawing.Size(463, 105);
             this.richTextBox6.TabIndex = 8;
             this.richTextBox6.Text = "";
             // 
-            // UserControl27
+            // claimStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,7 +121,7 @@
             this.Controls.Add(this.richTextBox7);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.richTextBox6);
-            this.Name = "UserControl27";
+            this.Name = "claimStatus";
             this.Size = new System.Drawing.Size(639, 413);
             this.ResumeLayout(false);
             this.PerformLayout();

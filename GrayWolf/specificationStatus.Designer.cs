@@ -75,6 +75,7 @@
             // 
             this.richTextBox5.Location = new System.Drawing.Point(29, 29);
             this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richTextBox5.Size = new System.Drawing.Size(451, 173);
             this.richTextBox5.TabIndex = 14;
             this.richTextBox5.Text = "";
@@ -88,7 +89,7 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "مشخصات کلی پرونده";
             // 
-            // UserControl25
+            // specificationStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -98,7 +99,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.richTextBox5);
             this.Controls.Add(this.label5);
-            this.Name = "UserControl25";
+            this.Name = "specificationStatus";
             this.Size = new System.Drawing.Size(606, 411);
             this.ResumeLayout(false);
             this.PerformLayout();

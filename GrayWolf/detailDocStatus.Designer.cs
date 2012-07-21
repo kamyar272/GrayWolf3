@@ -75,6 +75,7 @@
             // 
             this.richTextBox4.Location = new System.Drawing.Point(24, 21);
             this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.richTextBox4.Size = new System.Drawing.Size(451, 173);
             this.richTextBox4.TabIndex = 20;
             this.richTextBox4.Text = "";
@@ -88,7 +89,7 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "جزئیات پرونده";
             // 
-            // UserControl26
+            // detailDocStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -98,7 +99,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.richTextBox4);
             this.Controls.Add(this.label8);
-            this.Name = "UserControl26";
+            this.Name = "detailDocStatus";
             this.Size = new System.Drawing.Size(579, 402);
             this.ResumeLayout(false);
             this.PerformLayout();
