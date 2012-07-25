@@ -48,6 +48,13 @@
             this.navBarItem7 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem11 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem12 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarGroup6 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem13 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem14 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem15 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem16 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem17 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem18 = new DevExpress.XtraNavBar.NavBarItem();
             this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
@@ -93,7 +100,8 @@
             this.navBarGroup2,
             this.navBarGroup3,
             this.navBarGroup4,
-            this.navBarGroup5});
+            this.navBarGroup5,
+            this.navBarGroup6});
             this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.navBarItem1,
             this.navBarItem2,
@@ -106,7 +114,13 @@
             this.navBarItem10,
             this.navBarItem7,
             this.navBarItem11,
-            this.navBarItem12});
+            this.navBarItem12,
+            this.navBarItem13,
+            this.navBarItem14,
+            this.navBarItem15,
+            this.navBarItem16,
+            this.navBarItem17,
+            this.navBarItem18});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 151;
@@ -175,7 +189,7 @@
             // 
             this.navBarItem8.Caption = "ثبت شرکت";
             this.navBarItem8.Name = "navBarItem8";
-            this.navBarItem8.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem7_LinkClicked);
+            this.navBarItem8.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem8_LinkClicked);
             // 
             // navBarGroup3
             // 
@@ -189,7 +203,7 @@
             // 
             this.navBarItem9.Caption = "گزارش فعالیت کاربر";
             this.navBarItem9.Name = "navBarItem9";
-            this.navBarItem9.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem8_LinkClicked);
+            this.navBarItem9.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem9_LinkClicked);
             // 
             // navBarGroup4
             // 
@@ -203,6 +217,7 @@
             // 
             this.navBarItem10.Caption = "جست‌وجو اختراع";
             this.navBarItem10.Name = "navBarItem10";
+            this.navBarItem10.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem10_LinkClicked);
             // 
             // navBarGroup5
             // 
@@ -229,6 +244,49 @@
             this.navBarItem12.Caption = "پیغام‌های ارسالی";
             this.navBarItem12.Name = "navBarItem12";
             // 
+            // navBarGroup6
+            // 
+            this.navBarGroup6.Caption = "صندوق پیغام‌ها";
+            this.navBarGroup6.Expanded = true;
+            this.navBarGroup6.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem13),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem14),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem15),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem16),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem17),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem18)});
+            this.navBarGroup6.Name = "navBarGroup6";
+            // 
+            // navBarItem13
+            // 
+            this.navBarItem13.Caption = "تایید اصالت";
+            this.navBarItem13.Name = "navBarItem13";
+            // 
+            // navBarItem14
+            // 
+            this.navBarItem14.Caption = "تایید مفاد ادعانامه";
+            this.navBarItem14.Name = "navBarItem14";
+            // 
+            // navBarItem15
+            // 
+            this.navBarItem15.Caption = "تایید مشخصات کلی";
+            this.navBarItem15.Name = "navBarItem15";
+            // 
+            // navBarItem16
+            // 
+            this.navBarItem16.Caption = "تایید جزئیات";
+            this.navBarItem16.Name = "navBarItem16";
+            // 
+            // navBarItem17
+            // 
+            this.navBarItem17.Caption = "تایید صحت نمایندگان حقوقی";
+            this.navBarItem17.Name = "navBarItem17";
+            // 
+            // navBarItem18
+            // 
+            this.navBarItem18.Caption = "خاتمه";
+            this.navBarItem18.Name = "navBarItem18";
+            // 
             // xtraScrollableControl1
             // 
             this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -245,7 +303,9 @@
             this.Controls.Add(this.splitContainerControl1);
             this.Name = "expertFrame2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "فرم کارشناس";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
@@ -278,5 +338,12 @@
         private DevExpress.XtraNavBar.NavBarItem navBarItem7;
         private DevExpress.XtraNavBar.NavBarItem navBarItem11;
         private DevExpress.XtraNavBar.NavBarItem navBarItem12;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup6;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem13;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem14;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem15;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem16;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem17;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem18;
     }
 }

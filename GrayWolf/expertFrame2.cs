@@ -83,7 +83,7 @@ namespace GrayWolf
             xtraScrollableControl1.Controls.Add(mt1);
         }
 
-        private void navBarItem7_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void navBarItem8_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             foreach (Control ctrl in xtraScrollableControl1.Controls)
             {
@@ -94,7 +94,7 @@ namespace GrayWolf
             xtraScrollableControl1.Controls.Add(cr1);
         }
 
-        private void navBarItem8_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void navBarItem9_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             foreach (Control ctrl in xtraScrollableControl1.Controls)
             {
@@ -105,7 +105,7 @@ namespace GrayWolf
             xtraScrollableControl1.Controls.Add(ur1);
         }
 
-        private void navBarItem9_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        private void navBarItem10_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             foreach (Control ctrl in xtraScrollableControl1.Controls)
             {

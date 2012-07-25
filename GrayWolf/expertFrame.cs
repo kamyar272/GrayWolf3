@@ -93,5 +93,10 @@ namespace GrayWolf
         {
 
         }
+
+        private void navBarItem14_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+
+        }
     }
 }

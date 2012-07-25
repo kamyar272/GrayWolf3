@@ -54,13 +54,13 @@ namespace GrayWolf
             this.navBarItem11 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem12 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup6 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
             this.navBarItem13 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem14 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem15 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem16 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem17 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem18 = new DevExpress.XtraNavBar.NavBarItem();
+            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl4)).BeginInit();
             this.splitContainerControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl5)).BeginInit();
@@ -250,14 +250,6 @@ namespace GrayWolf
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem18)});
             this.navBarGroup6.Name = "navBarGroup6";
             // 
-            // xtraScrollableControl1
-            // 
-            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
-            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(479, 475);
-            this.xtraScrollableControl1.TabIndex = 0;
-            // 
             // navBarItem13
             // 
             this.navBarItem13.Caption = "تایید اصالت";
@@ -267,6 +259,7 @@ namespace GrayWolf
             // 
             this.navBarItem14.Caption = "تایید مفاد ادعا نامه";
             this.navBarItem14.Name = "navBarItem14";
+            this.navBarItem14.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem14_LinkClicked);
             // 
             // navBarItem15
             // 
@@ -288,6 +281,14 @@ namespace GrayWolf
             // 
             this.navBarItem18.Caption = "خاتمه";
             this.navBarItem18.Name = "navBarItem18";
+            // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(479, 475);
+            this.xtraScrollableControl1.TabIndex = 0;
             // 
             // expertFrame
             // 
