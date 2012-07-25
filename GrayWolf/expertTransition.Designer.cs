@@ -77,7 +77,7 @@
             this.navBarControl1.Size = new System.Drawing.Size(224, 375);
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
-            this.navBarControl1.Click += new System.EventHandler(this.navBarControl1_Click);
+          
             // 
             // navBarGroup1
             // 

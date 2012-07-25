@@ -61,7 +61,8 @@ namespace GrayWolf
                         }
                         if (TProle == "1")
                         {
-                            var regionReq = new expertFrame();
+                            
+                            var regionReq = new expertFrame2();
                             regionReq.ShowDialog();
                         }
                         if (TProle == "0")

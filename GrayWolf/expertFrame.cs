@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Graywolf;
 
 namespace GrayWolf
 {
@@ -38,6 +39,13 @@ namespace GrayWolf
 
         private void navBarItem1_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            NewInv ni1 = new NewInv();
+            ni1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(ni1);
 
         }
 
@@ -77,6 +85,11 @@ namespace GrayWolf
         }
 
         private void navBarItem10_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+
+        }
+
+        private void navBarItem17_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
 
         }

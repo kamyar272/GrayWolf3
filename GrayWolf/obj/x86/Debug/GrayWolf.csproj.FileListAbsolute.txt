@@ -270,7 +270,6 @@ F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.updateFieldDo.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.UserInfoView.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.invSearch.resources
-F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.UserControl3.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.userSearch.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.userUpdate.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.deleteUser.resources
@@ -282,3 +281,4 @@ F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GenerateResource.read.1.tlog
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GenerateResource.write.1.tlog
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.exe.licenses
+F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.expertFrame2.resources

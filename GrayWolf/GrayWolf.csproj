@@ -83,6 +83,12 @@
     <Compile Include="EditInv.Designer.cs">
       <DependentUpon>EditInv.cs</DependentUpon>
     </Compile>
+    <Compile Include="expertFrame2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expertFrame2.Designer.cs">
+      <DependentUpon>expertFrame2.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginFrame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,12 +277,6 @@
     <Compile Include="invSearch.Designer.cs">
       <DependentUpon>invSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl3.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl3.Designer.cs">
-      <DependentUpon>UserControl3.cs</DependentUpon>
-    </Compile>
     <Compile Include="userSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -339,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditInv.resx">
       <DependentUpon>EditInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expertFrame2.resx">
+      <DependentUpon>expertFrame2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginFrame.resx">
       <DependentUpon>loginFrame.cs</DependentUpon>
@@ -435,9 +438,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="invSearch.resx">
       <DependentUpon>invSearch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl3.resx">
-      <DependentUpon>UserControl3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userSearch.resx">
       <DependentUpon>userSearch.cs</DependentUpon>

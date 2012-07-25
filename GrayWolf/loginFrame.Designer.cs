@@ -45,7 +45,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(316, 221);
+            this.pictureBox1.Size = new System.Drawing.Size(314, 222);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -63,7 +63,7 @@
             this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
             this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(316, 221);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(314, 222);
             this.xtraScrollableControl1.TabIndex = 7;
             // 
             // label3
@@ -138,10 +138,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 221);
+            this.ClientSize = new System.Drawing.Size(314, 222);
             this.Controls.Add(this.xtraScrollableControl1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "loginFrame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ورود";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.xtraScrollableControl1.ResumeLayout(false);
