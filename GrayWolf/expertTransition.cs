@@ -81,5 +81,7 @@ namespace GrayWolf
             uc28.Dock = DockStyle.Fill;
             panelControl1.Controls.Add(uc28);
         }
+
+       
     }
 }

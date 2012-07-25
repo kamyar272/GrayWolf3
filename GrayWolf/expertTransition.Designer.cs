@@ -54,7 +54,7 @@
             this.splitContainerControl1.Panel2.Controls.Add(this.panelControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(663, 375);
-            this.splitContainerControl1.SplitterPosition = 168;
+            this.splitContainerControl1.SplitterPosition = 224;
             this.splitContainerControl1.TabIndex = 0;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
@@ -73,9 +73,11 @@
             this.navBarItem6});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.Size = new System.Drawing.Size(168, 375);
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 168;
+            this.navBarControl1.Size = new System.Drawing.Size(224, 375);
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
+            this.navBarControl1.Click += new System.EventHandler(this.navBarControl1_Click);
             // 
             // navBarGroup1
             // 
@@ -131,15 +133,15 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(490, 375);
+            this.panelControl1.Size = new System.Drawing.Size(434, 375);
             this.panelControl1.TabIndex = 0;
             // 
-            // UserControl22
+            // expertTransition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainerControl1);
-            this.Name = "UserControl22";
+            this.Name = "expertTransition";
             this.Size = new System.Drawing.Size(663, 375);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);

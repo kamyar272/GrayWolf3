@@ -61,6 +61,10 @@
             this.navBarItem11 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem12 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem13 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarGroup7 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem9 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem21 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem22 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -145,7 +149,8 @@
             this.navBarGroup3,
             this.navBarGroup4,
             this.navBarGroup5,
-            this.navBarGroup6});
+            this.navBarGroup6,
+            this.navBarGroup7});
             this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.navBarItem1,
             this.navBarItem2,
@@ -162,7 +167,10 @@
             this.navBarItem17,
             this.navBarItem18,
             this.navBarItem19,
-            this.navBarItem20});
+            this.navBarItem20,
+            this.navBarItem9,
+            this.navBarItem21,
+            this.navBarItem22});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 157;
@@ -350,6 +358,31 @@
             // 
             this.navBarItem13.Name = "navBarItem13";
             // 
+            // navBarGroup7
+            // 
+            this.navBarGroup7.Caption = "صندوق پیغام‌ها";
+            this.navBarGroup7.Expanded = true;
+            this.navBarGroup7.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem9),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem21),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem22)});
+            this.navBarGroup7.Name = "navBarGroup7";
+            // 
+            // navBarItem9
+            // 
+            this.navBarItem9.Caption = "ایجاد پیغام جدید";
+            this.navBarItem9.Name = "navBarItem9";
+            // 
+            // navBarItem21
+            // 
+            this.navBarItem21.Caption = "پیغام‌های دریافتی";
+            this.navBarItem21.Name = "navBarItem21";
+            // 
+            // navBarItem22
+            // 
+            this.navBarItem22.Caption = "پیغام‌های ارسالی";
+            this.navBarItem22.Name = "navBarItem22";
+            // 
             // ManagerFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,5 +442,9 @@
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup7;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem9;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem21;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem22;
     }
 }

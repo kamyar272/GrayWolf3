@@ -49,6 +49,10 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem7 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem11 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem12 = new DevExpress.XtraNavBar.NavBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
@@ -127,7 +131,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(533, 419);
+            this.panelControl1.Size = new System.Drawing.Size(533, 452);
             this.panelControl1.TabIndex = 0;
             // 
             // xtraScrollableControl1
@@ -135,7 +139,7 @@
             this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraScrollableControl1.Location = new System.Drawing.Point(2, 2);
             this.xtraScrollableControl1.Name = "xtraScrollableControl1";
-            this.xtraScrollableControl1.Size = new System.Drawing.Size(529, 415);
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(529, 448);
             this.xtraScrollableControl1.TabIndex = 0;
             // 
             // navBarItem10
@@ -167,7 +171,7 @@
             this.splitContainerControl2.Panel1.Text = "Panel1";
             this.splitContainerControl2.Panel2.Controls.Add(this.panelControl1);
             this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(734, 419);
+            this.splitContainerControl2.Size = new System.Drawing.Size(734, 452);
             this.splitContainerControl2.SplitterPosition = 196;
             this.splitContainerControl2.TabIndex = 0;
             this.splitContainerControl2.Text = "splitContainerControl2";
@@ -180,7 +184,8 @@
             this.navBarGroup1,
             this.navBarGroup2,
             this.navBarGroup3,
-            this.navBarGroup4});
+            this.navBarGroup4,
+            this.navBarGroup5});
             this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.navBarItem1,
             this.navBarItem2,
@@ -190,11 +195,14 @@
             this.navBarItem6,
             this.navBarItem8,
             this.navBarItem9,
-            this.navBarItem10});
+            this.navBarItem10,
+            this.navBarItem7,
+            this.navBarItem11,
+            this.navBarItem12});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 151;
-            this.navBarControl1.Size = new System.Drawing.Size(196, 419);
+            this.navBarControl1.Size = new System.Drawing.Size(196, 452);
             this.navBarControl1.TabIndex = 0;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -250,18 +258,43 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl2);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(734, 462);
+            this.splitContainerControl1.Size = new System.Drawing.Size(734, 495);
             this.splitContainerControl1.SplitterPosition = 38;
             this.splitContainerControl1.TabIndex = 1;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
-            // Form1
+            // navBarGroup5
+            // 
+            this.navBarGroup5.Caption = "صندوق پیغام‌ها";
+            this.navBarGroup5.Expanded = true;
+            this.navBarGroup5.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem7),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem11),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem12)});
+            this.navBarGroup5.Name = "navBarGroup5";
+            // 
+            // navBarItem7
+            // 
+            this.navBarItem7.Caption = "ایجاد پیغام جدید";
+            this.navBarItem7.Name = "navBarItem7";
+            // 
+            // navBarItem11
+            // 
+            this.navBarItem11.Caption = "پیغام‌های دریافتی";
+            this.navBarItem11.Name = "navBarItem11";
+            // 
+            // navBarItem12
+            // 
+            this.navBarItem12.Caption = "پیغام‌های ارسالی";
+            this.navBarItem12.Name = "navBarItem12";
+            // 
+            // userFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 462);
+            this.ClientSize = new System.Drawing.Size(734, 495);
             this.Controls.Add(this.splitContainerControl1);
-            this.Name = "Form1";
+            this.Name = "userFrame";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "فرم کاربر";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
@@ -301,6 +334,10 @@
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup5;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem7;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem11;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem12;
 
     }
 }
