@@ -33,7 +33,7 @@ namespace GrayWolf
             {
                 ctrl1.Dispose();
             }
-            representetiveStatus uc24 = new representetiveStatus();
+            claimStatus uc24 = new claimStatus();
             uc24.Dock = DockStyle.Fill;
             panelControl1.Controls.Add(uc24);
         }
@@ -66,7 +66,7 @@ namespace GrayWolf
             {
                 ctrl1.Dispose();
             }
-            claimStatus uc27 = new claimStatus();
+            representetiveStatus uc27 = new representetiveStatus();
             uc27.Dock = DockStyle.Fill;
             panelControl1.Controls.Add(uc27);
         }

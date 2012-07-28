@@ -24,15 +24,14 @@ namespace GrayWolf
             string tmp = inv.ReadLine();
             string tmp2 = "";
             while (tmp2 != tmp) { tmp2 = nextTitle(invs); }
-            string i = nextI1(invs, "i6", "i7");
-            this.richTextBox6.AppendText(i);
-            i = nextI1(invs, "i8", "i9");
-            this.richTextBox7.AppendText(i);
+            string i = nextI1(invs, "i2", "i3");
+            this.richTextBox2.AppendText(i);
+            i = nextI1(invs, "i4", "i5");
+            this.richTextBox3.AppendText(i);
             inv.Close();
             invs.Close();
-
         }
-        string nextI1(StreamReader s, string c1, string c2)
+        string nextI1(StreamReader s,string c1,string c2)
         {
             string res = "", tmp;
             bool flag = false;
@@ -87,6 +86,5 @@ namespace GrayWolf
             return b.ToString();
         }
         
-
     }
 }

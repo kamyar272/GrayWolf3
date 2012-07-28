@@ -241,7 +241,6 @@ F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\Graywolf.EditInv.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.loginFrame.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.ManagerFrame.resources
-F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.expertFrame.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\Graywolf.Morethan3.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\Graywolf.NewInv.resources
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\Graywolf.PricingInv.resources
@@ -282,3 +281,6 @@ F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GenerateResource.write.1.tlog
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.exe.licenses
 F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.expertFrame2.resources
+F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.newMessage.resources
+F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.recivedMessage.resources
+F:\Sharif\10 (90-91)\OOD\Project\Code\5-joined\GrayWolf3\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.sentMessage.resources

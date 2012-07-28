@@ -28,115 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.xtraScrollableControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button10
+            // xtraScrollableControl1
             // 
-            this.button10.Location = new System.Drawing.Point(323, 339);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(164, 46);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "تایید";
-            this.button10.UseVisualStyleBackColor = true;
+            this.xtraScrollableControl1.Controls.Add(this.textBox2);
+            this.xtraScrollableControl1.Controls.Add(this.label6);
+            this.xtraScrollableControl1.Controls.Add(this.button4);
+            this.xtraScrollableControl1.Controls.Add(this.button3);
+            this.xtraScrollableControl1.Controls.Add(this.richTextBox3);
+            this.xtraScrollableControl1.Controls.Add(this.label3);
+            this.xtraScrollableControl1.Controls.Add(this.richTextBox2);
+            this.xtraScrollableControl1.Controls.Add(this.label2);
+            this.xtraScrollableControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(594, 402);
+            this.xtraScrollableControl1.TabIndex = 0;
             // 
-            // button9
+            // textBox2
             // 
-            this.button9.Location = new System.Drawing.Point(24, 339);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(164, 46);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "عدم تایید";
-            this.button9.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(22, 238);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(451, 76);
+            this.textBox2.TabIndex = 23;
             // 
-            // label11
+            // label6
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(559, 243);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(49, 13);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "توضیحات";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(524, 228);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "توضیحات";
             // 
-            // textBox5
+            // button4
             // 
-            this.textBox5.Location = new System.Drawing.Point(24, 240);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(463, 78);
-            this.textBox5.TabIndex = 12;
+            this.button4.Location = new System.Drawing.Point(329, 331);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(144, 47);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "تایید";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // button3
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(508, 139);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 13);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "نام و اطلاعات شرکت";
+            this.button3.Location = new System.Drawing.Point(22, 331);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(145, 47);
+            this.button3.TabIndex = 20;
+            this.button3.Text = "عدم تایید";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // richTextBox7
+            // richTextBox3
             // 
-            this.richTextBox7.Location = new System.Drawing.Point(24, 136);
-            this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox7.Size = new System.Drawing.Size(463, 98);
-            this.richTextBox7.TabIndex = 10;
-            this.richTextBox7.Text = "";
+            this.richTextBox3.Location = new System.Drawing.Point(22, 128);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox3.Size = new System.Drawing.Size(451, 104);
+            this.richTextBox3.TabIndex = 19;
+            this.richTextBox3.Text = "";
             // 
-            // label9
+            // label3
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(493, 28);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(115, 13);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "نام و اطلاعات نمایندگان";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(497, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "اطلاعات پرونده";
             // 
-            // richTextBox6
+            // richTextBox2
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(24, 25);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.richTextBox6.Size = new System.Drawing.Size(463, 105);
-            this.richTextBox6.TabIndex = 8;
-            this.richTextBox6.Text = "";
+            this.richTextBox2.Location = new System.Drawing.Point(22, 25);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox2.Size = new System.Drawing.Size(451, 97);
+            this.richTextBox2.TabIndex = 17;
+            this.richTextBox2.Text = "";
             // 
-            // claimStatus
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(504, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "مفاد ادعا نامه";
+            // 
+            // representetiveStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.richTextBox7);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.richTextBox6);
-            this.Name = "claimStatus";
-            this.Size = new System.Drawing.Size(639, 413);
+            this.Controls.Add(this.xtraScrollableControl1);
+            this.Name = "representetiveStatus";
+            this.Size = new System.Drawing.Size(594, 402);
+            this.xtraScrollableControl1.ResumeLayout(false);
+            this.xtraScrollableControl1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RichTextBox richTextBox7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RichTextBox richTextBox6;
+        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label2;
+
     }
 }

@@ -115,6 +115,104 @@ namespace GrayWolf
             si1.Dock = DockStyle.Fill;
             xtraScrollableControl1.Controls.Add(si1);
         }
-       
+
+        private void navBarItem13_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            originalityStatus os1 = new originalityStatus();
+            os1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(os1);
+        }
+
+        private void navBarItem14_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            claimStatus cs1 = new claimStatus();
+            cs1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(cs1);
+        }
+
+        private void navBarItem15_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            specificationStatus ss1 = new specificationStatus();
+            ss1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(ss1);
+        }
+
+        private void navBarItem16_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            detailDocStatus dds1 = new detailDocStatus();
+            dds1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(dds1);
+        }
+
+        private void navBarItem17_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            representetiveStatus rs1 = new representetiveStatus();
+            rs1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(rs1);
+        }
+
+        private void navBarItem18_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            saveChanges sc1 = new saveChanges();
+            sc1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(sc1);
+        }
+
+        private void navBarItem7_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            newMessage nm1 = new newMessage();
+            nm1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(nm1);
+        }
+
+        private void navBarItem11_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            recivedMessage rm1 = new recivedMessage();
+            rm1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(rm1);
+        }
+
+        private void navBarItem12_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            foreach (Control ctrl in xtraScrollableControl1.Controls)
+            {
+                ctrl.Dispose();
+            }
+            sentMessage sm1 = new sentMessage();
+            sm1.Dock = DockStyle.Fill;
+            xtraScrollableControl1.Controls.Add(sm1);
+        }
     }
 }

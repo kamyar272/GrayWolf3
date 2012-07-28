@@ -131,7 +131,6 @@
             // navBarGroup1
             // 
             this.navBarGroup1.Caption = "اختراع";
-            this.navBarGroup1.Expanded = true;
             this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2),
@@ -166,7 +165,6 @@
             // navBarGroup2
             // 
             this.navBarGroup2.Caption = "درخواست‌ها";
-            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem5),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem6),
@@ -194,7 +192,6 @@
             // navBarGroup3
             // 
             this.navBarGroup3.Caption = "گزارش گیری";
-            this.navBarGroup3.Expanded = true;
             this.navBarGroup3.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem9)});
             this.navBarGroup3.Name = "navBarGroup3";
@@ -233,16 +230,19 @@
             // 
             this.navBarItem7.Caption = "ایجاد پیغام جدید";
             this.navBarItem7.Name = "navBarItem7";
+            this.navBarItem7.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem7_LinkClicked);
             // 
             // navBarItem11
             // 
             this.navBarItem11.Caption = "پیغام‌های دریافتی";
             this.navBarItem11.Name = "navBarItem11";
+            this.navBarItem11.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem11_LinkClicked);
             // 
             // navBarItem12
             // 
             this.navBarItem12.Caption = "پیغام‌های ارسالی";
             this.navBarItem12.Name = "navBarItem12";
+            this.navBarItem12.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem12_LinkClicked);
             // 
             // navBarGroup6
             // 
@@ -261,31 +261,37 @@
             // 
             this.navBarItem13.Caption = "تایید اصالت";
             this.navBarItem13.Name = "navBarItem13";
+            this.navBarItem13.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem13_LinkClicked);
             // 
             // navBarItem14
             // 
             this.navBarItem14.Caption = "تایید مفاد ادعانامه";
             this.navBarItem14.Name = "navBarItem14";
+            this.navBarItem14.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem14_LinkClicked);
             // 
             // navBarItem15
             // 
             this.navBarItem15.Caption = "تایید مشخصات کلی";
             this.navBarItem15.Name = "navBarItem15";
+            this.navBarItem15.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem15_LinkClicked);
             // 
             // navBarItem16
             // 
             this.navBarItem16.Caption = "تایید جزئیات";
             this.navBarItem16.Name = "navBarItem16";
+            this.navBarItem16.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem16_LinkClicked);
             // 
             // navBarItem17
             // 
             this.navBarItem17.Caption = "تایید صحت نمایندگان حقوقی";
             this.navBarItem17.Name = "navBarItem17";
+            this.navBarItem17.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem17_LinkClicked);
             // 
             // navBarItem18
             // 
             this.navBarItem18.Caption = "خاتمه";
             this.navBarItem18.Name = "navBarItem18";
+            this.navBarItem18.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem18_LinkClicked);
             // 
             // xtraScrollableControl1
             // 

@@ -101,12 +101,6 @@
     <Compile Include="ManagerFrame.Designer.cs">
       <DependentUpon>ManagerFrame.cs</DependentUpon>
     </Compile>
-    <Compile Include="expertFrame.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="expertFrame.Designer.cs">
-      <DependentUpon>expertFrame.cs</DependentUpon>
-    </Compile>
     <Compile Include="Morethan3.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,6 +112,12 @@
     </Compile>
     <Compile Include="NewInv.Designer.cs">
       <DependentUpon>NewInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="newMessage.Designer.cs">
+      <DependentUpon>newMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="PricingInv.cs">
       <SubType>UserControl</SubType>
@@ -131,6 +131,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="recivedMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="recivedMessage.Designer.cs">
+      <DependentUpon>recivedMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="ReconsiderInv.cs">
       <SubType>UserControl</SubType>
@@ -158,6 +164,12 @@
     </Compile>
     <Compile Include="SearchInv.Designer.cs">
       <DependentUpon>SearchInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sentMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sentMessage.Designer.cs">
+      <DependentUpon>sentMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="user.cs" />
     <Compile Include="UserControl11.Designer.cs">
@@ -229,11 +241,11 @@
     <Compile Include="originalityStatus.Designer.cs">
       <DependentUpon>originalityStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="representetiveStatus.cs">
+    <Compile Include="claimStatus.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="representetiveStatus.Designer.cs">
-      <DependentUpon>representetiveStatus.cs</DependentUpon>
+    <Compile Include="claimStatus.Designer.cs">
+      <DependentUpon>claimStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="specificationStatus.cs">
       <SubType>UserControl</SubType>
@@ -247,11 +259,11 @@
     <Compile Include="detailDocStatus.Designer.cs">
       <DependentUpon>detailDocStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="claimStatus.cs">
+    <Compile Include="representetiveStatus.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="claimStatus.Designer.cs">
-      <DependentUpon>claimStatus.cs</DependentUpon>
+    <Compile Include="representetiveStatus.Designer.cs">
+      <DependentUpon>representetiveStatus.cs</DependentUpon>
     </Compile>
     <Compile Include="saveChanges.cs">
       <SubType>UserControl</SubType>
@@ -349,14 +361,14 @@
     <EmbeddedResource Include="ManagerFrame.resx">
       <DependentUpon>ManagerFrame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="expertFrame.resx">
-      <DependentUpon>expertFrame.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Morethan3.resx">
       <DependentUpon>Morethan3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewInv.resx">
       <DependentUpon>NewInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newMessage.resx">
+      <DependentUpon>newMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PricingInv.resx">
       <DependentUpon>PricingInv.cs</DependentUpon>
@@ -366,6 +378,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recivedMessage.resx">
+      <DependentUpon>recivedMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReconsiderInv.resx">
       <DependentUpon>ReconsiderInv.cs</DependentUpon>
@@ -378,6 +393,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SearchInv.resx">
       <DependentUpon>SearchInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sentMessage.resx">
+      <DependentUpon>sentMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl11.resx">
       <DependentUpon>roleInfoChange.cs</DependentUpon>
@@ -415,8 +433,8 @@
     <EmbeddedResource Include="originalityStatus.resx">
       <DependentUpon>originalityStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="representetiveStatus.resx">
-      <DependentUpon>representetiveStatus.cs</DependentUpon>
+    <EmbeddedResource Include="claimStatus.resx">
+      <DependentUpon>claimStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="specificationStatus.resx">
       <DependentUpon>specificationStatus.cs</DependentUpon>
@@ -424,8 +442,8 @@
     <EmbeddedResource Include="detailDocStatus.resx">
       <DependentUpon>detailDocStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="claimStatus.resx">
-      <DependentUpon>claimStatus.cs</DependentUpon>
+    <EmbeddedResource Include="representetiveStatus.resx">
+      <DependentUpon>representetiveStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="saveChanges.resx">
       <DependentUpon>saveChanges.cs</DependentUpon>
