@@ -52,77 +52,77 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="companyReg.cs">
+    <Compile Include="UI\companyReg.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="companyReg.Designer.cs">
+    <Compile Include="UI\companyReg.Designer.cs">
       <DependentUpon>companyReg.cs</DependentUpon>
     </Compile>
     <Compile Include="dbm.cs" />
-    <Compile Include="DefaultInv.cs">
+    <Compile Include="UI\DefaultInv.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DefaultInv.Designer.cs">
+    <Compile Include="UI\DefaultInv.Designer.cs">
       <DependentUpon>DefaultInv.cs</DependentUpon>
     </Compile>
-    <Compile Include="DefaultManager.cs">
+    <Compile Include="UI\DefaultManager.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DefaultManager.Designer.cs">
+    <Compile Include="UI\DefaultManager.Designer.cs">
       <DependentUpon>DefaultManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocInv.cs">
+    <Compile Include="UI\DocInv.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DocInv.Designer.cs">
+    <Compile Include="UI\DocInv.Designer.cs">
       <DependentUpon>DocInv.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditInv.cs">
+    <Compile Include="UI\EditInv.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EditInv.Designer.cs">
+    <Compile Include="UI\EditInv.Designer.cs">
       <DependentUpon>EditInv.cs</DependentUpon>
     </Compile>
-    <Compile Include="expertFrame2.cs">
+    <Compile Include="UI\expertFrame2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="expertFrame2.Designer.cs">
+    <Compile Include="UI\expertFrame2.Designer.cs">
       <DependentUpon>expertFrame2.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginFrame.cs">
+    <Compile Include="UI\loginFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginFrame.Designer.cs">
+    <Compile Include="UI\loginFrame.Designer.cs">
       <DependentUpon>loginFrame.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerFrame.cs">
+    <Compile Include="UI\ManagerFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManagerFrame.Designer.cs">
+    <Compile Include="UI\ManagerFrame.Designer.cs">
       <DependentUpon>ManagerFrame.cs</DependentUpon>
     </Compile>
-    <Compile Include="Morethan3.cs">
+    <Compile Include="UI\Morethan3.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Morethan3.Designer.cs">
+    <Compile Include="UI\Morethan3.Designer.cs">
       <DependentUpon>Morethan3.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewInv.cs">
+    <Compile Include="UI\NewInv.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NewInv.Designer.cs">
+    <Compile Include="UI\NewInv.Designer.cs">
       <DependentUpon>NewInv.cs</DependentUpon>
     </Compile>
-    <Compile Include="newMessage.cs">
+    <Compile Include="UI\newMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="newMessage.Designer.cs">
+    <Compile Include="UI\newMessage.Designer.cs">
       <DependentUpon>newMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="PricingInv.cs">
+    <Compile Include="UI\PricingInv.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PricingInv.Designer.cs">
+    <Compile Include="UI\PricingInv.Designer.cs">
       <DependentUpon>PricingInv.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -132,245 +132,233 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="recivedMessage.cs">
+    <Compile Include="UI\recivedMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="recivedMessage.Designer.cs">
+    <Compile Include="UI\recivedMessage.Designer.cs">
       <DependentUpon>recivedMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReconsiderInv.cs">
+    <Compile Include="UI\ReconsiderInv.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ReconsiderInv.Designer.cs">
+    <Compile Include="UI\ReconsiderInv.Designer.cs">
       <DependentUpon>ReconsiderInv.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report.cs">
+    <Compile Include="UI\Report.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Report.Designer.cs">
+    <Compile Include="UI\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
-    <Compile Include="roleSearch.cs">
+    <Compile Include="UI\roleSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="roleSearch.Designer.cs">
+    <Compile Include="UI\roleSearch.Designer.cs">
       <DependentUpon>roleSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="roleInfoChange.cs">
+    <Compile Include="UI\roleInfoChange.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchInv.cs">
+    <Compile Include="UI\SearchInv.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchInv.Designer.cs">
+    <Compile Include="UI\SearchInv.Designer.cs">
       <DependentUpon>SearchInv.cs</DependentUpon>
     </Compile>
-    <Compile Include="sentMessage.cs">
+    <Compile Include="UI\sentMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="sentMessage.Designer.cs">
+    <Compile Include="UI\sentMessage.Designer.cs">
       <DependentUpon>sentMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="user.cs" />
-    <Compile Include="UserControl11.Designer.cs">
+    <Compile Include="UI\UserControl11.Designer.cs">
       <DependentUpon>roleInfoChange.cs</DependentUpon>
     </Compile>
-    <Compile Include="roleInfoChangeDo.cs">
+    <Compile Include="UI\roleInfoChangeDo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="roleInfoChangeDo.Designer.cs">
+    <Compile Include="UI\roleInfoChangeDo.Designer.cs">
       <DependentUpon>roleInfoChangeDo.cs</DependentUpon>
     </Compile>
-    <Compile Include="deleteRole.cs">
+    <Compile Include="UI\deleteRole.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="deleteRole.Designer.cs">
+    <Compile Include="UI\deleteRole.Designer.cs">
       <DependentUpon>deleteRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="addRole.cs">
+    <Compile Include="UI\addRole.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="addRole.Designer.cs">
+    <Compile Include="UI\addRole.Designer.cs">
       <DependentUpon>addRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="expertReport.cs">
+    <Compile Include="UI\expertReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="expertReport.Designer.cs">
+    <Compile Include="UI\expertReport.Designer.cs">
       <DependentUpon>expertReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="userFrame.cs">
+    <Compile Include="UI\userFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="userFrame.Designer.cs">
+    <Compile Include="UI\userFrame.Designer.cs">
       <DependentUpon>userFrame.cs</DependentUpon>
     </Compile>
-    <Compile Include="userReport.cs">
+    <Compile Include="UI\userReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="userReport.Designer.cs">
+    <Compile Include="UI\userReport.Designer.cs">
       <DependentUpon>userReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="invView.cs">
+    <Compile Include="UI\invView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="invView.Designer.cs">
+    <Compile Include="UI\invView.Designer.cs">
       <DependentUpon>invView.cs</DependentUpon>
     </Compile>
-    <Compile Include="invAcceptance.cs">
+    <Compile Include="UI\invAcceptance.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="invAcceptance.Designer.cs">
+    <Compile Include="UI\invAcceptance.Designer.cs">
       <DependentUpon>invAcceptance.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl21.cs">
+    <Compile Include="UI\originalityStatus.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl21.Designer.cs">
-      <DependentUpon>UserControl21.cs</DependentUpon>
-    </Compile>
-    <Compile Include="expertTransition.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="expertTransition.Designer.cs">
-      <DependentUpon>expertTransition.cs</DependentUpon>
-    </Compile>
-    <Compile Include="originalityStatus.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="originalityStatus.Designer.cs">
+    <Compile Include="UI\originalityStatus.Designer.cs">
       <DependentUpon>originalityStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="claimStatus.cs">
+    <Compile Include="UI\claimStatus.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="claimStatus.Designer.cs">
+    <Compile Include="UI\claimStatus.Designer.cs">
       <DependentUpon>claimStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="specificationStatus.cs">
+    <Compile Include="UI\specificationStatus.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="specificationStatus.Designer.cs">
+    <Compile Include="UI\specificationStatus.Designer.cs">
       <DependentUpon>specificationStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="detailDocStatus.cs">
+    <Compile Include="UI\detailDocStatus.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="detailDocStatus.Designer.cs">
+    <Compile Include="UI\detailDocStatus.Designer.cs">
       <DependentUpon>detailDocStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="representetiveStatus.cs">
+    <Compile Include="UI\representetiveStatus.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="representetiveStatus.Designer.cs">
+    <Compile Include="UI\representetiveStatus.Designer.cs">
       <DependentUpon>representetiveStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="saveChanges.cs">
+    <Compile Include="UI\saveChanges.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="saveChanges.Designer.cs">
+    <Compile Include="UI\saveChanges.Designer.cs">
       <DependentUpon>saveChanges.cs</DependentUpon>
     </Compile>
-    <Compile Include="updateFieldDo.cs">
+    <Compile Include="UI\updateFieldDo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="updateFieldDo.Designer.cs">
+    <Compile Include="UI\updateFieldDo.Designer.cs">
       <DependentUpon>updateFieldDo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInfoView.cs">
+    <Compile Include="UI\UserInfoView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserInfoView.Designer.cs">
+    <Compile Include="UI\UserInfoView.Designer.cs">
       <DependentUpon>UserInfoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="invSearch.cs">
+    <Compile Include="UI\invSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="invSearch.Designer.cs">
+    <Compile Include="UI\invSearch.Designer.cs">
       <DependentUpon>invSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="userSearch.cs">
+    <Compile Include="UI\userSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="userSearch.Designer.cs">
+    <Compile Include="UI\userSearch.Designer.cs">
       <DependentUpon>userSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="userUpdate.cs">
+    <Compile Include="UI\userUpdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="userUpdate.Designer.cs">
+    <Compile Include="UI\userUpdate.Designer.cs">
       <DependentUpon>userUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="deleteUser.cs">
+    <Compile Include="UI\deleteUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="deleteUser.Designer.cs">
+    <Compile Include="UI\deleteUser.Designer.cs">
       <DependentUpon>deleteUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="addUser.cs">
+    <Compile Include="UI\addUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="addUser.Designer.cs">
+    <Compile Include="UI\addUser.Designer.cs">
       <DependentUpon>addUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="fieldSearch.cs">
+    <Compile Include="UI\fieldSearch.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="fieldSearch.Designer.cs">
+    <Compile Include="UI\fieldSearch.Designer.cs">
       <DependentUpon>fieldSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="updateField.cs">
+    <Compile Include="UI\updateField.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="updateField.Designer.cs">
+    <Compile Include="UI\updateField.Designer.cs">
       <DependentUpon>updateField.cs</DependentUpon>
     </Compile>
-    <Compile Include="deleteField.cs">
+    <Compile Include="UI\deleteField.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="deleteField.Designer.cs">
+    <Compile Include="UI\deleteField.Designer.cs">
       <DependentUpon>deleteField.cs</DependentUpon>
     </Compile>
-    <Compile Include="addField.cs">
+    <Compile Include="UI\addField.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="addField.Designer.cs">
+    <Compile Include="UI\addField.Designer.cs">
       <DependentUpon>addField.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="companyReg.resx">
+    <EmbeddedResource Include="UI\companyReg.resx">
       <DependentUpon>companyReg.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DefaultInv.resx">
+    <EmbeddedResource Include="UI\DefaultInv.resx">
       <DependentUpon>DefaultInv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DefaultManager.resx">
+    <EmbeddedResource Include="UI\DefaultManager.resx">
       <DependentUpon>DefaultManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocInv.resx">
+    <EmbeddedResource Include="UI\DocInv.resx">
       <DependentUpon>DocInv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditInv.resx">
+    <EmbeddedResource Include="UI\EditInv.resx">
       <DependentUpon>EditInv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="expertFrame2.resx">
+    <EmbeddedResource Include="UI\expertFrame2.resx">
       <DependentUpon>expertFrame2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginFrame.resx">
+    <EmbeddedResource Include="UI\loginFrame.resx">
       <DependentUpon>loginFrame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManagerFrame.resx">
+    <EmbeddedResource Include="UI\ManagerFrame.resx">
       <DependentUpon>ManagerFrame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Morethan3.resx">
+    <EmbeddedResource Include="UI\Morethan3.resx">
       <DependentUpon>Morethan3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewInv.resx">
+    <EmbeddedResource Include="UI\NewInv.resx">
       <DependentUpon>NewInv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="newMessage.resx">
+    <EmbeddedResource Include="UI\newMessage.resx">
       <DependentUpon>newMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PricingInv.resx">
+    <EmbeddedResource Include="UI\PricingInv.resx">
       <DependentUpon>PricingInv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -379,106 +367,100 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="recivedMessage.resx">
+    <EmbeddedResource Include="UI\recivedMessage.resx">
       <DependentUpon>recivedMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReconsiderInv.resx">
+    <EmbeddedResource Include="UI\ReconsiderInv.resx">
       <DependentUpon>ReconsiderInv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report.resx">
+    <EmbeddedResource Include="UI\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="roleSearch.resx">
+    <EmbeddedResource Include="UI\roleSearch.resx">
       <DependentUpon>roleSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SearchInv.resx">
+    <EmbeddedResource Include="UI\SearchInv.resx">
       <DependentUpon>SearchInv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="sentMessage.resx">
+    <EmbeddedResource Include="UI\sentMessage.resx">
       <DependentUpon>sentMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl11.resx">
+    <EmbeddedResource Include="UI\UserControl11.resx">
       <DependentUpon>roleInfoChange.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="roleInfoChangeDo.resx">
+    <EmbeddedResource Include="UI\roleInfoChangeDo.resx">
       <DependentUpon>roleInfoChangeDo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="deleteRole.resx">
+    <EmbeddedResource Include="UI\deleteRole.resx">
       <DependentUpon>deleteRole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addRole.resx">
+    <EmbeddedResource Include="UI\addRole.resx">
       <DependentUpon>addRole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="expertReport.resx">
+    <EmbeddedResource Include="UI\expertReport.resx">
       <DependentUpon>expertReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userFrame.resx">
+    <EmbeddedResource Include="UI\userFrame.resx">
       <DependentUpon>userFrame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userReport.resx">
+    <EmbeddedResource Include="UI\userReport.resx">
       <DependentUpon>userReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="invView.resx">
+    <EmbeddedResource Include="UI\invView.resx">
       <DependentUpon>invView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="invAcceptance.resx">
+    <EmbeddedResource Include="UI\invAcceptance.resx">
       <DependentUpon>invAcceptance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl21.resx">
-      <DependentUpon>UserControl21.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="expertTransition.resx">
-      <DependentUpon>expertTransition.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="originalityStatus.resx">
+    <EmbeddedResource Include="UI\originalityStatus.resx">
       <DependentUpon>originalityStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="claimStatus.resx">
+    <EmbeddedResource Include="UI\claimStatus.resx">
       <DependentUpon>claimStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="specificationStatus.resx">
+    <EmbeddedResource Include="UI\specificationStatus.resx">
       <DependentUpon>specificationStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="detailDocStatus.resx">
+    <EmbeddedResource Include="UI\detailDocStatus.resx">
       <DependentUpon>detailDocStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="representetiveStatus.resx">
+    <EmbeddedResource Include="UI\representetiveStatus.resx">
       <DependentUpon>representetiveStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="saveChanges.resx">
+    <EmbeddedResource Include="UI\saveChanges.resx">
       <DependentUpon>saveChanges.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="updateFieldDo.resx">
+    <EmbeddedResource Include="UI\updateFieldDo.resx">
       <DependentUpon>updateFieldDo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserInfoView.resx">
+    <EmbeddedResource Include="UI\UserInfoView.resx">
       <DependentUpon>UserInfoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="invSearch.resx">
+    <EmbeddedResource Include="UI\invSearch.resx">
       <DependentUpon>invSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userSearch.resx">
+    <EmbeddedResource Include="UI\userSearch.resx">
       <DependentUpon>userSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="userUpdate.resx">
+    <EmbeddedResource Include="UI\userUpdate.resx">
       <DependentUpon>userUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="deleteUser.resx">
+    <EmbeddedResource Include="UI\deleteUser.resx">
       <DependentUpon>deleteUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addUser.resx">
+    <EmbeddedResource Include="UI\addUser.resx">
       <DependentUpon>addUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fieldSearch.resx">
+    <EmbeddedResource Include="UI\fieldSearch.resx">
       <DependentUpon>fieldSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="updateField.resx">
+    <EmbeddedResource Include="UI\updateField.resx">
       <DependentUpon>updateField.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="deleteField.resx">
+    <EmbeddedResource Include="UI\deleteField.resx">
       <DependentUpon>deleteField.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addField.resx">
+    <EmbeddedResource Include="UI\addField.resx">
       <DependentUpon>addField.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -490,18 +472,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Stones_with_grass_by_Pollon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Grass_Texture_by_Holly66696.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bk.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bk1.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
