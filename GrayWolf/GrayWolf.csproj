@@ -40,6 +40,9 @@
     <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v10.2.Core, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FarsiLibrary.Utils">
+      <HintPath>..\..\..\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="company.cs" />
     <Compile Include="companyReg.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +87,7 @@
     <Compile Include="EditInv.Designer.cs">
       <DependentUpon>EditInv.cs</DependentUpon>
     </Compile>
+    <Compile Include="inventionClass.cs" />
     <Compile Include="loginFrame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,7 +158,9 @@
     <Compile Include="SearchInv.Designer.cs">
       <DependentUpon>SearchInv.cs</DependentUpon>
     </Compile>
+    <Compile Include="StatusClass.cs" />
     <Compile Include="user.cs" />
+    <Compile Include="userClass.cs" />
     <Compile Include="UserControl11.Designer.cs">
       <DependentUpon>roleInfoChange.cs</DependentUpon>
     </Compile>
@@ -325,6 +332,7 @@
     <Compile Include="addField.Designer.cs">
       <DependentUpon>addField.cs</DependentUpon>
     </Compile>
+    <Compile Include="zone.cs" />
     <EmbeddedResource Include="companyReg.resx">
       <DependentUpon>companyReg.cs</DependentUpon>
     </EmbeddedResource>
@@ -485,6 +493,7 @@
   <ItemGroup>
     <None Include="Resources\bk1.bmp" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

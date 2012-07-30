@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using FarsiLibrary.Utils;
 
 namespace GrayWolf
 {
@@ -26,6 +27,8 @@ namespace GrayWolf
         {
             dbm.discardBuffer();
             MessageBox.Show("اطلاعات ازریابیهای این پرونده دور ریخته شد");
+            
+            
             //return;
         }
     }
