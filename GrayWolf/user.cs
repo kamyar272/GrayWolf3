@@ -15,6 +15,11 @@ namespace GrayWolf
             this.UID = UID;
             this.name = name;
             this.membershipDate = date;
+            return;
+        }
+        public user()
+        {
+            return;
         }
 
     }

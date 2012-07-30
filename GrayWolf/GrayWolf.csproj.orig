@@ -55,8 +55,13 @@
     <Reference Include="DevExpress.XtraNavBar.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraScheduler.v10.2.Core, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+<<<<<<< HEAD
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0-rc\lib\net40\EntityFramework.dll</HintPath>
+=======
     <Reference Include="FarsiLibrary.Utils">
       <HintPath>..\..\..\FarsiLibrary.Utils.dll</HintPath>
+>>>>>>> 5fdd8e115e43f9b9dc9d14a64458cc682b2b621c
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -72,12 +77,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="company.cs" />
+<<<<<<< HEAD
+    <Compile Include="DB\test1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>test1.edmx</DependentUpon>
     </Compile>
     <Compile Include="UI\companyReg.cs">
+=======
+    <Compile Include="company.cs" />
+    <Compile Include="companyReg.cs">
+>>>>>>> 5fdd8e115e43f9b9dc9d14a64458cc682b2b621c
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\companyReg.Designer.cs">
@@ -108,7 +118,12 @@
     <Compile Include="UI\EditInv.Designer.cs">
       <DependentUpon>EditInv.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="UI\expertFrame2.cs">
+=======
     <Compile Include="inventionClass.cs" />
+    <Compile Include="loginFrame.cs">
+>>>>>>> 5fdd8e115e43f9b9dc9d14a64458cc682b2b621c
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\expertFrame2.Designer.cs">
@@ -190,14 +205,21 @@
     <Compile Include="UI\SearchInv.Designer.cs">
       <DependentUpon>SearchInv.cs</DependentUpon>
     </Compile>
-    <Compile Include="StatusClass.cs" />
+<<<<<<< HEAD
+    <Compile Include="UI\sentMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\sentMessage.Designer.cs">
       <DependentUpon>sentMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="user.cs" />
+    <Compile Include="UI\UserControl11.Designer.cs">
+=======
+    <Compile Include="StatusClass.cs" />
+    <Compile Include="user.cs" />
     <Compile Include="userClass.cs" />
+    <Compile Include="UserControl11.Designer.cs">
+>>>>>>> 5fdd8e115e43f9b9dc9d14a64458cc682b2b621c
       <DependentUpon>roleInfoChange.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\roleInfoChangeDo.cs">
@@ -350,8 +372,12 @@
     <Compile Include="UI\addField.Designer.cs">
       <DependentUpon>addField.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <EmbeddedResource Include="UI\companyReg.resx">
+=======
     <Compile Include="zone.cs" />
     <EmbeddedResource Include="companyReg.resx">
+>>>>>>> 5fdd8e115e43f9b9dc9d14a64458cc682b2b621c
       <DependentUpon>companyReg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DefaultInv.resx">
@@ -376,10 +402,6 @@
       <DependentUpon>ManagerFrame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Morethan3.resx">
-    <EmbeddedResource Include="expertFrame.resx">
-      <DependentUpon>expertFrame.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Morethan3.resx">
       <DependentUpon>Morethan3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\NewInv.resx">
@@ -470,10 +492,6 @@
       <DependentUpon>invSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\userSearch.resx">
-    <EmbeddedResource Include="UserControl3.resx">
-      <DependentUpon>UserControl3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="userSearch.resx">
       <DependentUpon>userSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\userUpdate.resx">
