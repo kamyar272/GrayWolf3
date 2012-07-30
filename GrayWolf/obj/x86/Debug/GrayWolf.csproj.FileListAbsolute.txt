@@ -337,3 +337,6 @@ F:\Sharif\10 (90-91)\OOD\Project\Code\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.
 F:\Sharif\10 (90-91)\OOD\Project\Code\GrayWolf3\GrayWolf\obj\x86\Debug\GenerateResource.read.1.tlog
 F:\Sharif\10 (90-91)\OOD\Project\Code\GrayWolf3\GrayWolf\obj\x86\Debug\GenerateResource.write.1.tlog
 F:\Sharif\10 (90-91)\OOD\Project\Code\GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.exe.licenses
+F:\Sharif\10 (90-91)\OOD\Project\Code\1-GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.exe
+F:\Sharif\10 (90-91)\OOD\Project\Code\1-GrayWolf3\GrayWolf\obj\x86\Debug\GrayWolf.pdb
+F:\Sharif\10 (90-91)\OOD\Project\Code\1-GrayWolf3\GrayWolf\bin\Debug\GrayWolf.exe.config
