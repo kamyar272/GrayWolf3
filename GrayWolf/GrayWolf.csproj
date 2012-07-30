@@ -52,6 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logic\StatusClass.cs" />
+    <Compile Include="Logic\userClass.cs" />
     <Compile Include="UI\companyReg.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -171,7 +173,7 @@
     <Compile Include="UI\sentMessage.Designer.cs">
       <DependentUpon>sentMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="user.cs" />
+    <Compile Include="Logic\user.cs" />
     <Compile Include="UI\UserControl11.Designer.cs">
       <DependentUpon>roleInfoChange.cs</DependentUpon>
     </Compile>
@@ -325,6 +327,7 @@
     <Compile Include="UI\addField.Designer.cs">
       <DependentUpon>addField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logic\zone.cs" />
     <EmbeddedResource Include="UI\companyReg.resx">
       <DependentUpon>companyReg.cs</DependentUpon>
     </EmbeddedResource>
@@ -472,6 +475,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DB\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,9 +1,9 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GrayWolf
+namespace GrayWolf.Logic
 {
     class user
     {
@@ -15,6 +15,11 @@ namespace GrayWolf
             this.UID = UID;
             this.name = name;
             this.membershipDate = date;
+            return;
+        }
+        public user()
+        {
+            return;
         }
 
     }

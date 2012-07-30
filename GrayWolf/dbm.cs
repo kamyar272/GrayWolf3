@@ -15,7 +15,7 @@ namespace GrayWolf
          {
              return;
          }
-         public static void userUpdate(user updated)
+         public static void userUpdate(Logic.user updated)
          {
              return;
          }
