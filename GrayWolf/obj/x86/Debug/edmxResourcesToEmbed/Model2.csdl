@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="patternsystemINV" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="patternsystemEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="invenitons" EntityType="patternsystemINV.inveniton" />
+    <AssociationSet Name="inveniton_ibfk_7" Association="patternsystemINV.inveniton_ibfk_7">
+      <End Role="inveniton" EntitySet="invenitons" />
+      <End Role="inveniton1" EntitySet="invenitons" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="inveniton">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="region" Type="Int32" Nullable="false" />
+    <Property Name="state" Type="Int32" />
+    <Property Name="owner" Type="Int32" />
+    <Property Name="inventor" Type="Int32" Nullable="false" />
+    <Property Name="company" Type="Int32" />
+    <Property Name="currentVersion" Type="Int32" />
+    <Property Name="dateOfApproved" Type="DateTime" />
+    <Property Name="expert" Type="Int32" />
+    <Property Name="result" Type="Int32" />
+    <Property Name="relatedInvention" Type="Int32" />
+    <Property Name="relation" Type="String" />
+    <Property Name="current" Type="Int32" Nullable="false" />
+    <Property Name="requested" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="inveniton1" Relationship="patternsystemINV.inveniton_ibfk_7" FromRole="inveniton" ToRole="inveniton1" />
+    <NavigationProperty Name="inveniton2" Relationship="patternsystemINV.inveniton_ibfk_7" FromRole="inveniton1" ToRole="inveniton" />
+  </EntityType>
+  <Association Name="inveniton_ibfk_7">
+    <End Role="inveniton" Type="patternsystemINV.inveniton" Multiplicity="0..1" />
+    <End Role="inveniton1" Type="patternsystemINV.inveniton" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inveniton">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inveniton1">
+        <PropertyRef Name="relatedInvention" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

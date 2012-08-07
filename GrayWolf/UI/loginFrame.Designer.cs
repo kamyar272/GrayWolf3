@@ -1,4 +1,4 @@
-﻿namespace GrayWolf
+﻿namespace GrayWolf.UI
 {
     partial class loginFrame
     {

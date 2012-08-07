@@ -1,0 +1,1629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="patternsystemModel1.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="patternsystemModel1StoreContainer">
+          <EntitySet Name="company" EntityType="patternsystemModel1.Store.company" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="companyfile" EntityType="patternsystemModel1.Store.companyfile" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="inveniton" EntityType="patternsystemModel1.Store.inveniton" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="inventionfile" EntityType="patternsystemModel1.Store.inventionfile" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="inventionversion" EntityType="patternsystemModel1.Store.inventionversion" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="message" EntityType="patternsystemModel1.Store.message" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="pendinguser" EntityType="patternsystemModel1.Store.pendinguser" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="properties" EntityType="patternsystemModel1.Store.properties" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="region" EntityType="patternsystemModel1.Store.region" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="regioninfo" EntityType="patternsystemModel1.Store.regioninfo" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="requesttomnger" EntityType="patternsystemModel1.Store.requesttomnger" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="result" EntityType="patternsystemModel1.Store.result" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="user" EntityType="patternsystemModel1.Store.user" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="user_company" EntityType="patternsystemModel1.Store.user_company" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="user_inveniton" EntityType="patternsystemModel1.Store.user_inveniton" store:Type="Tables" Schema="patternsystem" />
+          <EntitySet Name="user_region" EntityType="patternsystemModel1.Store.user_region" store:Type="Tables" Schema="patternsystem" />
+          <AssociationSet Name="FKInventionF241640" Association="patternsystemModel1.Store.FKInventionF241640">
+            <End Role="inventionversion" EntitySet="inventionversion" />
+            <End Role="inventionfile" EntitySet="inventionfile" />
+          </AssociationSet>
+          <AssociationSet Name="FKRegion806968" Association="patternsystemModel1.Store.FKRegion806968">
+            <End Role="regioninfo" EntitySet="regioninfo" />
+            <End Role="region" EntitySet="region" />
+          </AssociationSet>
+          <AssociationSet Name="FKRequestToM55315" Association="patternsystemModel1.Store.FKRequestToM55315">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="requesttomnger" EntitySet="requesttomnger" />
+          </AssociationSet>
+          <AssociationSet Name="FKRequestToM835124" Association="patternsystemModel1.Store.FKRequestToM835124">
+            <End Role="regioninfo" EntitySet="regioninfo" />
+            <End Role="requesttomnger" EntitySet="requesttomnger" />
+          </AssociationSet>
+          <AssociationSet Name="FKRequestToM984098" Association="patternsystemModel1.Store.FKRequestToM984098">
+            <End Role="user" EntitySet="user" />
+            <End Role="requesttomnger" EntitySet="requesttomnger" />
+          </AssociationSet>
+          <AssociationSet Name="FKUser_Inven374453" Association="patternsystemModel1.Store.FKUser_Inven374453">
+            <End Role="user" EntitySet="user" />
+            <End Role="user_inveniton" EntitySet="user_inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="FKUser_Inven796151" Association="patternsystemModel1.Store.FKUser_Inven796151">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="user_inveniton" EntitySet="user_inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="FKUser_Regio625074" Association="patternsystemModel1.Store.FKUser_Regio625074">
+            <End Role="user" EntitySet="user" />
+            <End Role="user_region" EntitySet="user_region" />
+          </AssociationSet>
+          <AssociationSet Name="FKUser_Regio731319" Association="patternsystemModel1.Store.FKUser_Regio731319">
+            <End Role="region" EntitySet="region" />
+            <End Role="user_region" EntitySet="user_region" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_1" Association="patternsystemModel1.Store.inveniton_ibfk_1">
+            <End Role="region" EntitySet="region" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_2" Association="patternsystemModel1.Store.inveniton_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_3" Association="patternsystemModel1.Store.inveniton_ibfk_3">
+            <End Role="company" EntitySet="company" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_4" Association="patternsystemModel1.Store.inveniton_ibfk_4">
+            <End Role="inventionversion" EntitySet="inventionversion" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_5" Association="patternsystemModel1.Store.inveniton_ibfk_5">
+            <End Role="user" EntitySet="user" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_6" Association="patternsystemModel1.Store.inveniton_ibfk_6">
+            <End Role="result" EntitySet="result" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_7" Association="patternsystemModel1.Store.inveniton_ibfk_7">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="inveniton1" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inventionversion_ibfk_1" Association="patternsystemModel1.Store.inventionversion_ibfk_1">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="inventionversion" EntitySet="inventionversion" />
+          </AssociationSet>
+          <AssociationSet Name="inventionversion_ibfk_2" Association="patternsystemModel1.Store.inventionversion_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="inventionversion" EntitySet="inventionversion" />
+          </AssociationSet>
+          <AssociationSet Name="message_ibfk_1" Association="patternsystemModel1.Store.message_ibfk_1">
+            <End Role="user" EntitySet="user" />
+            <End Role="message" EntitySet="message" />
+          </AssociationSet>
+          <AssociationSet Name="result_ibfk_1" Association="patternsystemModel1.Store.result_ibfk_1">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="result" EntitySet="result" />
+          </AssociationSet>
+          <AssociationSet Name="result_ibfk_2" Association="patternsystemModel1.Store.result_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="result" EntitySet="result" />
+          </AssociationSet>
+          <AssociationSet Name="user_company_ibfk_1" Association="patternsystemModel1.Store.user_company_ibfk_1">
+            <End Role="user" EntitySet="user" />
+            <End Role="user_company" EntitySet="user_company" />
+          </AssociationSet>
+          <AssociationSet Name="user_company_ibfk_2" Association="patternsystemModel1.Store.user_company_ibfk_2">
+            <End Role="company" EntitySet="company" />
+            <End Role="user_company" EntitySet="user_company" />
+          </AssociationSet>
+          <AssociationSet Name="user_company_ibfk_3" Association="patternsystemModel1.Store.user_company_ibfk_3">
+            <End Role="companyfile" EntitySet="companyfile" />
+            <End Role="user_company" EntitySet="user_company" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="100" />
+          <Property Name="contact" Type="varchar" />
+        </EntityType>
+        <EntityType Name="companyfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="100" />
+          <Property Name="path" Type="varchar" MaxLength="100" />
+          <Property Name="description" Type="varchar" />
+        </EntityType>
+        <EntityType Name="inveniton">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="region" Type="int" Nullable="false" />
+          <Property Name="state" Type="int" />
+          <Property Name="owner" Type="int" />
+          <Property Name="inventor" Type="int" Nullable="false" />
+          <Property Name="company" Type="int" />
+          <Property Name="currentVersion" Type="int" />
+          <Property Name="dateOfApproved" Type="timestamp" Precision="0" />
+          <Property Name="expert" Type="int" />
+          <Property Name="result" Type="int" />
+          <Property Name="relatedInvention" Type="int" />
+          <Property Name="relation" Type="varchar" MaxLength="100" />
+          <Property Name="current" Type="int" Nullable="false" />
+          <Property Name="requested" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="inventionfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="InventionVersionId" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="100" />
+          <Property Name="path" Type="varchar" MaxLength="100" />
+          <Property Name="description" Type="varchar" />
+        </EntityType>
+        <EntityType Name="inventionversion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="invention" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="100" />
+          <Property Name="description" Type="varchar" />
+          <Property Name="abstract" Type="varchar" />
+          <Property Name="background" Type="varchar" />
+          <Property Name="indictment" Type="varchar" />
+          <Property Name="comment" Type="varchar" />
+          <Property Name="date" Type="datetime" />
+          <Property Name="price" Type="int" />
+          <Property Name="version" Type="int" Nullable="false" />
+          <Property Name="author" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="message">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="int" Nullable="false" />
+          <Property Name="message" Type="varchar" />
+        </EntityType>
+        <EntityType Name="pendinguser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NoN" Type="int" Nullable="false" />
+          <Property Name="username" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="firstname" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="lastname" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="properties">
+          <Key>
+            <PropertyRef Name="Key" />
+          </Key>
+          <Property Name="Key" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Value" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="region">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="regionInfoId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="regioninfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="100" />
+          <Property Name="description" Type="varchar" />
+        </EntityType>
+        <EntityType Name="requesttomnger">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="int" Nullable="false" />
+          <Property Name="result" Type="int" />
+          <Property Name="inventionId" Type="int" Nullable="false" />
+          <Property Name="regionInfoId" Type="int" Nullable="false" />
+          <Property Name="type" Type="int" />
+        </EntityType>
+        <EntityType Name="result">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="originality" Type="int" />
+          <Property Name="completeDescription" Type="int" />
+          <Property Name="completeDocuments" Type="int" />
+          <Property Name="indictment" Type="int" />
+          <Property Name="verifyCompany" Type="int" />
+          <Property Name="invention" Type="int" Nullable="false" />
+          <Property Name="expert" Type="int" Nullable="false" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+          <Property Name="order" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NoN" Type="int" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="100" />
+          <Property Name="password" Type="varchar" MaxLength="100" />
+          <Property Name="role" Type="int" />
+          <Property Name="firstname" Type="varchar" MaxLength="100" />
+          <Property Name="lastname" Type="varchar" MaxLength="100" />
+          <Property Name="expert" Type="int" />
+        </EntityType>
+        <EntityType Name="user_company">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="CompanyId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="CompanyId" Type="int" Nullable="false" />
+          <Property Name="document" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="user_inveniton">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="InvenitonId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="InvenitonId" Type="int" Nullable="false" />
+          <Property Name="chert" Type="int" Nullable="false" />
+          <Property Name="share" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="user_region">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RegionId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="RegionId" Type="int" Nullable="false" />
+          <Property Name="jafang" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FKInventionF241640">
+          <End Role="inventionversion" Type="patternsystemModel1.Store.inventionversion" Multiplicity="1" />
+          <End Role="inventionfile" Type="patternsystemModel1.Store.inventionfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inventionversion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inventionfile">
+              <PropertyRef Name="InventionVersionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKRegion806968">
+          <End Role="regioninfo" Type="patternsystemModel1.Store.regioninfo" Multiplicity="1" />
+          <End Role="region" Type="patternsystemModel1.Store.region" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="regioninfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="region">
+              <PropertyRef Name="regionInfoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKRequestToM55315">
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="1" />
+          <End Role="requesttomnger" Type="patternsystemModel1.Store.requesttomnger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="requesttomnger">
+              <PropertyRef Name="inventionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKRequestToM835124">
+          <End Role="regioninfo" Type="patternsystemModel1.Store.regioninfo" Multiplicity="1" />
+          <End Role="requesttomnger" Type="patternsystemModel1.Store.requesttomnger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="regioninfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="requesttomnger">
+              <PropertyRef Name="regionInfoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKRequestToM984098">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="1" />
+          <End Role="requesttomnger" Type="patternsystemModel1.Store.requesttomnger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="requesttomnger">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKUser_Inven374453">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="1" />
+          <End Role="user_inveniton" Type="patternsystemModel1.Store.user_inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_inveniton">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKUser_Inven796151">
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="1" />
+          <End Role="user_inveniton" Type="patternsystemModel1.Store.user_inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_inveniton">
+              <PropertyRef Name="InvenitonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKUser_Regio625074">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="1" />
+          <End Role="user_region" Type="patternsystemModel1.Store.user_region" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_region">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKUser_Regio731319">
+          <End Role="region" Type="patternsystemModel1.Store.region" Multiplicity="1" />
+          <End Role="user_region" Type="patternsystemModel1.Store.user_region" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="region">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_region">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_1">
+          <End Role="region" Type="patternsystemModel1.Store.region" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="region">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="region" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_2">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="inventor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_3">
+          <End Role="company" Type="patternsystemModel1.Store.company" Multiplicity="0..1" />
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="company" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_4">
+          <End Role="inventionversion" Type="patternsystemModel1.Store.inventionversion" Multiplicity="0..1" />
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inventionversion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="currentVersion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_5">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="0..1" />
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="expert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_6">
+          <End Role="result" Type="patternsystemModel1.Store.result" Multiplicity="0..1" />
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="result">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="result" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_7">
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="0..1" />
+          <End Role="inveniton1" Type="patternsystemModel1.Store.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton1">
+              <PropertyRef Name="relatedInvention" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inventionversion_ibfk_1">
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="1" />
+          <End Role="inventionversion" Type="patternsystemModel1.Store.inventionversion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inventionversion">
+              <PropertyRef Name="invention" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inventionversion_ibfk_2">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="inventionversion" Type="patternsystemModel1.Store.inventionversion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inventionversion">
+              <PropertyRef Name="author" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="message_ibfk_1">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="message" Type="patternsystemModel1.Store.message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="message">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="result_ibfk_1">
+          <End Role="inveniton" Type="patternsystemModel1.Store.inveniton" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="result" Type="patternsystemModel1.Store.result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="result">
+              <PropertyRef Name="invention" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="result_ibfk_2">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="result" Type="patternsystemModel1.Store.result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="result">
+              <PropertyRef Name="expert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="user_company_ibfk_1">
+          <End Role="user" Type="patternsystemModel1.Store.user" Multiplicity="1" />
+          <End Role="user_company" Type="patternsystemModel1.Store.user_company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_company">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="user_company_ibfk_2">
+          <End Role="company" Type="patternsystemModel1.Store.company" Multiplicity="1" />
+          <End Role="user_company" Type="patternsystemModel1.Store.user_company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_company">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="user_company_ibfk_3">
+          <End Role="companyfile" Type="patternsystemModel1.Store.companyfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="user_company" Type="patternsystemModel1.Store.user_company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="companyfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_company">
+              <PropertyRef Name="document" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="patternsystemModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="company" EntityType="patternsystemModel1.company" />
+          <EntitySet Name="companyfile" EntityType="patternsystemModel1.companyfile" />
+          <EntitySet Name="inveniton" EntityType="patternsystemModel1.inveniton" />
+          <EntitySet Name="inventionfile" EntityType="patternsystemModel1.inventionfile" />
+          <EntitySet Name="inventionversion" EntityType="patternsystemModel1.inventionversion" />
+          <EntitySet Name="message" EntityType="patternsystemModel1.message" />
+          <EntitySet Name="pendinguser" EntityType="patternsystemModel1.pendinguser" />
+          <EntitySet Name="properties" EntityType="patternsystemModel1.properties" />
+          <EntitySet Name="region" EntityType="patternsystemModel1.region" />
+          <EntitySet Name="regioninfo" EntityType="patternsystemModel1.regioninfo" />
+          <EntitySet Name="requesttomnger" EntityType="patternsystemModel1.requesttomnger" />
+          <EntitySet Name="result" EntityType="patternsystemModel1.result" />
+          <EntitySet Name="user" EntityType="patternsystemModel1.user" />
+          <EntitySet Name="user_company" EntityType="patternsystemModel1.user_company" />
+          <EntitySet Name="user_inveniton" EntityType="patternsystemModel1.user_inveniton" />
+          <EntitySet Name="user_region" EntityType="patternsystemModel1.user_region" />
+          <AssociationSet Name="inveniton_ibfk_3" Association="patternsystemModel1.inveniton_ibfk_3">
+            <End Role="company" EntitySet="company" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="user_company_ibfk_2" Association="patternsystemModel1.user_company_ibfk_2">
+            <End Role="company" EntitySet="company" />
+            <End Role="user_company" EntitySet="user_company" />
+          </AssociationSet>
+          <AssociationSet Name="user_company_ibfk_3" Association="patternsystemModel1.user_company_ibfk_3">
+            <End Role="companyfile" EntitySet="companyfile" />
+            <End Role="user_company" EntitySet="user_company" />
+          </AssociationSet>
+          <AssociationSet Name="FKRequestToM55315" Association="patternsystemModel1.FKRequestToM55315">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="requesttomnger" EntitySet="requesttomnger" />
+          </AssociationSet>
+          <AssociationSet Name="FKUser_Inven796151" Association="patternsystemModel1.FKUser_Inven796151">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="user_inveniton" EntitySet="user_inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_1" Association="patternsystemModel1.inveniton_ibfk_1">
+            <End Role="region" EntitySet="region" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_2" Association="patternsystemModel1.inveniton_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_4" Association="patternsystemModel1.inveniton_ibfk_4">
+            <End Role="inventionversion" EntitySet="inventionversion" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_5" Association="patternsystemModel1.inveniton_ibfk_5">
+            <End Role="user" EntitySet="user" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_6" Association="patternsystemModel1.inveniton_ibfk_6">
+            <End Role="result" EntitySet="result" />
+            <End Role="inveniton" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inveniton_ibfk_7" Association="patternsystemModel1.inveniton_ibfk_7">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="inveniton1" EntitySet="inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="inventionversion_ibfk_1" Association="patternsystemModel1.inventionversion_ibfk_1">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="inventionversion" EntitySet="inventionversion" />
+          </AssociationSet>
+          <AssociationSet Name="result_ibfk_1" Association="patternsystemModel1.result_ibfk_1">
+            <End Role="inveniton" EntitySet="inveniton" />
+            <End Role="result" EntitySet="result" />
+          </AssociationSet>
+          <AssociationSet Name="FKInventionF241640" Association="patternsystemModel1.FKInventionF241640">
+            <End Role="inventionversion" EntitySet="inventionversion" />
+            <End Role="inventionfile" EntitySet="inventionfile" />
+          </AssociationSet>
+          <AssociationSet Name="inventionversion_ibfk_2" Association="patternsystemModel1.inventionversion_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="inventionversion" EntitySet="inventionversion" />
+          </AssociationSet>
+          <AssociationSet Name="message_ibfk_1" Association="patternsystemModel1.message_ibfk_1">
+            <End Role="user" EntitySet="user" />
+            <End Role="message" EntitySet="message" />
+          </AssociationSet>
+          <AssociationSet Name="FKRegion806968" Association="patternsystemModel1.FKRegion806968">
+            <End Role="regioninfo" EntitySet="regioninfo" />
+            <End Role="region" EntitySet="region" />
+          </AssociationSet>
+          <AssociationSet Name="FKUser_Regio731319" Association="patternsystemModel1.FKUser_Regio731319">
+            <End Role="region" EntitySet="region" />
+            <End Role="user_region" EntitySet="user_region" />
+          </AssociationSet>
+          <AssociationSet Name="FKRequestToM835124" Association="patternsystemModel1.FKRequestToM835124">
+            <End Role="regioninfo" EntitySet="regioninfo" />
+            <End Role="requesttomnger" EntitySet="requesttomnger" />
+          </AssociationSet>
+          <AssociationSet Name="FKRequestToM984098" Association="patternsystemModel1.FKRequestToM984098">
+            <End Role="user" EntitySet="user" />
+            <End Role="requesttomnger" EntitySet="requesttomnger" />
+          </AssociationSet>
+          <AssociationSet Name="result_ibfk_2" Association="patternsystemModel1.result_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="result" EntitySet="result" />
+          </AssociationSet>
+          <AssociationSet Name="FKUser_Inven374453" Association="patternsystemModel1.FKUser_Inven374453">
+            <End Role="user" EntitySet="user" />
+            <End Role="user_inveniton" EntitySet="user_inveniton" />
+          </AssociationSet>
+          <AssociationSet Name="FKUser_Regio625074" Association="patternsystemModel1.FKUser_Regio625074">
+            <End Role="user" EntitySet="user" />
+            <End Role="user_region" EntitySet="user_region" />
+          </AssociationSet>
+          <AssociationSet Name="user_company_ibfk_1" Association="patternsystemModel1.user_company_ibfk_1">
+            <End Role="user" EntitySet="user" />
+            <End Role="user_company" EntitySet="user_company" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="company">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" />
+          <Property Name="contact" Type="String" />
+          <NavigationProperty Name="inveniton" Relationship="patternsystemModel1.inveniton_ibfk_3" FromRole="company" ToRole="inveniton" />
+          <NavigationProperty Name="user_company" Relationship="patternsystemModel1.user_company_ibfk_2" FromRole="company" ToRole="user_company" />
+        </EntityType>
+        <EntityType Name="companyfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" />
+          <Property Name="path" Type="String" />
+          <Property Name="description" Type="String" />
+          <NavigationProperty Name="user_company" Relationship="patternsystemModel1.user_company_ibfk_3" FromRole="companyfile" ToRole="user_company" />
+        </EntityType>
+        <EntityType Name="inveniton">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="region" Type="Int32" Nullable="false" />
+          <Property Name="state" Type="Int32" />
+          <Property Name="owner" Type="Int32" />
+          <Property Name="inventor" Type="Int32" Nullable="false" />
+          <Property Name="company" Type="Int32" />
+          <Property Name="currentVersion" Type="Int32" />
+          <Property Name="dateOfApproved" Type="DateTime" />
+          <Property Name="expert" Type="Int32" />
+          <Property Name="result" Type="Int32" />
+          <Property Name="relatedInvention" Type="Int32" />
+          <Property Name="relation" Type="String" />
+          <Property Name="current" Type="Int32" Nullable="false" />
+          <Property Name="requested" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="company1" Relationship="patternsystemModel1.inveniton_ibfk_3" FromRole="inveniton" ToRole="company" />
+          <NavigationProperty Name="requesttomnger" Relationship="patternsystemModel1.FKRequestToM55315" FromRole="inveniton" ToRole="requesttomnger" />
+          <NavigationProperty Name="user_inveniton" Relationship="patternsystemModel1.FKUser_Inven796151" FromRole="inveniton" ToRole="user_inveniton" />
+          <NavigationProperty Name="region1" Relationship="patternsystemModel1.inveniton_ibfk_1" FromRole="inveniton" ToRole="region" />
+          <NavigationProperty Name="user" Relationship="patternsystemModel1.inveniton_ibfk_2" FromRole="inveniton" ToRole="user" />
+          <NavigationProperty Name="inventionversion" Relationship="patternsystemModel1.inveniton_ibfk_4" FromRole="inveniton" ToRole="inventionversion" />
+          <NavigationProperty Name="user1" Relationship="patternsystemModel1.inveniton_ibfk_5" FromRole="inveniton" ToRole="user" />
+          <NavigationProperty Name="result1" Relationship="patternsystemModel1.inveniton_ibfk_6" FromRole="inveniton" ToRole="result" />
+          <NavigationProperty Name="inveniton1" Relationship="patternsystemModel1.inveniton_ibfk_7" FromRole="inveniton" ToRole="inveniton1" />
+          <NavigationProperty Name="inveniton2" Relationship="patternsystemModel1.inveniton_ibfk_7" FromRole="inveniton1" ToRole="inveniton" />
+          <NavigationProperty Name="inventionversion1" Relationship="patternsystemModel1.inventionversion_ibfk_1" FromRole="inveniton" ToRole="inventionversion" />
+          <NavigationProperty Name="result2" Relationship="patternsystemModel1.result_ibfk_1" FromRole="inveniton" ToRole="result" />
+        </EntityType>
+        <EntityType Name="inventionfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InventionVersionId" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" />
+          <Property Name="path" Type="String" />
+          <Property Name="description" Type="String" />
+          <NavigationProperty Name="inventionversion" Relationship="patternsystemModel1.FKInventionF241640" FromRole="inventionfile" ToRole="inventionversion" />
+        </EntityType>
+        <EntityType Name="inventionversion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="invention" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" />
+          <Property Name="description" Type="String" />
+          <Property Name="abstract" Type="String" />
+          <Property Name="background" Type="String" />
+          <Property Name="indictment" Type="String" />
+          <Property Name="comment" Type="String" />
+          <Property Name="date" Type="DateTime" />
+          <Property Name="price" Type="Int32" />
+          <Property Name="version" Type="Int32" Nullable="false" />
+          <Property Name="author" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="inveniton" Relationship="patternsystemModel1.inveniton_ibfk_4" FromRole="inventionversion" ToRole="inveniton" />
+          <NavigationProperty Name="inveniton1" Relationship="patternsystemModel1.inventionversion_ibfk_1" FromRole="inventionversion" ToRole="inveniton" />
+          <NavigationProperty Name="inventionfile" Relationship="patternsystemModel1.FKInventionF241640" FromRole="inventionversion" ToRole="inventionfile" />
+          <NavigationProperty Name="user" Relationship="patternsystemModel1.inventionversion_ibfk_2" FromRole="inventionversion" ToRole="user" />
+        </EntityType>
+        <EntityType Name="message">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="Int32" Nullable="false" />
+          <Property Name="message1" Type="String" />
+          <NavigationProperty Name="user" Relationship="patternsystemModel1.message_ibfk_1" FromRole="message" ToRole="user" />
+        </EntityType>
+        <EntityType Name="pendinguser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NoN" Type="Int32" Nullable="false" />
+          <Property Name="username" Type="String" Nullable="false" />
+          <Property Name="password" Type="String" Nullable="false" />
+          <Property Name="firstname" Type="String" Nullable="false" />
+          <Property Name="lastname" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="properties">
+          <Key>
+            <PropertyRef Name="Key" />
+          </Key>
+          <Property Name="Key" Type="String" Nullable="false" />
+          <Property Name="Value" Type="String" Nullable="false" />
+        </EntityType>
+        <EntityType Name="region">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="regionInfoId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="inveniton" Relationship="patternsystemModel1.inveniton_ibfk_1" FromRole="region" ToRole="inveniton" />
+          <NavigationProperty Name="regioninfo" Relationship="patternsystemModel1.FKRegion806968" FromRole="region" ToRole="regioninfo" />
+          <NavigationProperty Name="user_region" Relationship="patternsystemModel1.FKUser_Regio731319" FromRole="region" ToRole="user_region" />
+        </EntityType>
+        <EntityType Name="regioninfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" />
+          <Property Name="description" Type="String" />
+          <NavigationProperty Name="region" Relationship="patternsystemModel1.FKRegion806968" FromRole="regioninfo" ToRole="region" />
+          <NavigationProperty Name="requesttomnger" Relationship="patternsystemModel1.FKRequestToM835124" FromRole="regioninfo" ToRole="requesttomnger" />
+        </EntityType>
+        <EntityType Name="requesttomnger">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="userId" Type="Int32" Nullable="false" />
+          <Property Name="result" Type="Int32" />
+          <Property Name="inventionId" Type="Int32" Nullable="false" />
+          <Property Name="regionInfoId" Type="Int32" Nullable="false" />
+          <Property Name="type" Type="Int32" />
+          <NavigationProperty Name="inveniton" Relationship="patternsystemModel1.FKRequestToM55315" FromRole="requesttomnger" ToRole="inveniton" />
+          <NavigationProperty Name="regioninfo" Relationship="patternsystemModel1.FKRequestToM835124" FromRole="requesttomnger" ToRole="regioninfo" />
+          <NavigationProperty Name="user" Relationship="patternsystemModel1.FKRequestToM984098" FromRole="requesttomnger" ToRole="user" />
+        </EntityType>
+        <EntityType Name="result">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="originality" Type="Int32" />
+          <Property Name="completeDescription" Type="Int32" />
+          <Property Name="completeDocuments" Type="Int32" />
+          <Property Name="indictment" Type="Int32" />
+          <Property Name="verifyCompany" Type="Int32" />
+          <Property Name="invention" Type="Int32" Nullable="false" />
+          <Property Name="expert" Type="Int32" Nullable="false" />
+          <Property Name="date" Type="DateTime" Nullable="false" />
+          <Property Name="order" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="inveniton" Relationship="patternsystemModel1.inveniton_ibfk_6" FromRole="result" ToRole="inveniton" />
+          <NavigationProperty Name="inveniton1" Relationship="patternsystemModel1.result_ibfk_1" FromRole="result" ToRole="inveniton" />
+          <NavigationProperty Name="user" Relationship="patternsystemModel1.result_ibfk_2" FromRole="result" ToRole="user" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NoN" Type="Int32" Nullable="false" />
+          <Property Name="username" Type="String" />
+          <Property Name="password" Type="String" />
+          <Property Name="role" Type="Int32" />
+          <Property Name="firstname" Type="String" />
+          <Property Name="lastname" Type="String" />
+          <Property Name="expert" Type="Int32" />
+          <NavigationProperty Name="inveniton" Relationship="patternsystemModel1.inveniton_ibfk_2" FromRole="user" ToRole="inveniton" />
+          <NavigationProperty Name="inveniton1" Relationship="patternsystemModel1.inveniton_ibfk_5" FromRole="user" ToRole="inveniton" />
+          <NavigationProperty Name="inventionversion" Relationship="patternsystemModel1.inventionversion_ibfk_2" FromRole="user" ToRole="inventionversion" />
+          <NavigationProperty Name="message" Relationship="patternsystemModel1.message_ibfk_1" FromRole="user" ToRole="message" />
+          <NavigationProperty Name="requesttomnger" Relationship="patternsystemModel1.FKRequestToM984098" FromRole="user" ToRole="requesttomnger" />
+          <NavigationProperty Name="result" Relationship="patternsystemModel1.result_ibfk_2" FromRole="user" ToRole="result" />
+          <NavigationProperty Name="user_inveniton" Relationship="patternsystemModel1.FKUser_Inven374453" FromRole="user" ToRole="user_inveniton" />
+          <NavigationProperty Name="user_region" Relationship="patternsystemModel1.FKUser_Regio625074" FromRole="user" ToRole="user_region" />
+          <NavigationProperty Name="user_company" Relationship="patternsystemModel1.user_company_ibfk_1" FromRole="user" ToRole="user_company" />
+        </EntityType>
+        <EntityType Name="user_company">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="CompanyId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="CompanyId" Type="Int32" Nullable="false" />
+          <Property Name="document" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="company" Relationship="patternsystemModel1.user_company_ibfk_2" FromRole="user_company" ToRole="company" />
+          <NavigationProperty Name="companyfile" Relationship="patternsystemModel1.user_company_ibfk_3" FromRole="user_company" ToRole="companyfile" />
+          <NavigationProperty Name="user" Relationship="patternsystemModel1.user_company_ibfk_1" FromRole="user_company" ToRole="user" />
+        </EntityType>
+        <EntityType Name="user_inveniton">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="InvenitonId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="InvenitonId" Type="Int32" Nullable="false" />
+          <Property Name="chert" Type="Int32" Nullable="false" />
+          <Property Name="share" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="inveniton" Relationship="patternsystemModel1.FKUser_Inven796151" FromRole="user_inveniton" ToRole="inveniton" />
+          <NavigationProperty Name="user" Relationship="patternsystemModel1.FKUser_Inven374453" FromRole="user_inveniton" ToRole="user" />
+        </EntityType>
+        <EntityType Name="user_region">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RegionId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="RegionId" Type="Int32" Nullable="false" />
+          <Property Name="jafang" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="region" Relationship="patternsystemModel1.FKUser_Regio731319" FromRole="user_region" ToRole="region" />
+          <NavigationProperty Name="user" Relationship="patternsystemModel1.FKUser_Regio625074" FromRole="user_region" ToRole="user" />
+        </EntityType>
+        <Association Name="inveniton_ibfk_3">
+          <End Role="company" Type="patternsystemModel1.company" Multiplicity="0..1" />
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="company" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="user_company_ibfk_2">
+          <End Role="company" Type="patternsystemModel1.company" Multiplicity="1" />
+          <End Role="user_company" Type="patternsystemModel1.user_company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="company">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_company">
+              <PropertyRef Name="CompanyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="user_company_ibfk_3">
+          <End Role="companyfile" Type="patternsystemModel1.companyfile" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="user_company" Type="patternsystemModel1.user_company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="companyfile">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_company">
+              <PropertyRef Name="document" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKRequestToM55315">
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="1" />
+          <End Role="requesttomnger" Type="patternsystemModel1.requesttomnger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="requesttomnger">
+              <PropertyRef Name="inventionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKUser_Inven796151">
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="1" />
+          <End Role="user_inveniton" Type="patternsystemModel1.user_inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_inveniton">
+              <PropertyRef Name="InvenitonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_1">
+          <End Role="region" Type="patternsystemModel1.region" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="region">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="region" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_2">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="inventor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_4">
+          <End Role="inventionversion" Type="patternsystemModel1.inventionversion" Multiplicity="0..1" />
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inventionversion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="currentVersion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_5">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="0..1" />
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="expert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_6">
+          <End Role="result" Type="patternsystemModel1.result" Multiplicity="0..1" />
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="result">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton">
+              <PropertyRef Name="result" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inveniton_ibfk_7">
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="0..1" />
+          <End Role="inveniton1" Type="patternsystemModel1.inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inveniton1">
+              <PropertyRef Name="relatedInvention" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inventionversion_ibfk_1">
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="1" />
+          <End Role="inventionversion" Type="patternsystemModel1.inventionversion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inventionversion">
+              <PropertyRef Name="invention" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="result_ibfk_1">
+          <End Role="inveniton" Type="patternsystemModel1.inveniton" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="result" Type="patternsystemModel1.result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inveniton">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="result">
+              <PropertyRef Name="invention" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKInventionF241640">
+          <End Role="inventionversion" Type="patternsystemModel1.inventionversion" Multiplicity="1" />
+          <End Role="inventionfile" Type="patternsystemModel1.inventionfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="inventionversion">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inventionfile">
+              <PropertyRef Name="InventionVersionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="inventionversion_ibfk_2">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="inventionversion" Type="patternsystemModel1.inventionversion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="inventionversion">
+              <PropertyRef Name="author" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="message_ibfk_1">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="message" Type="patternsystemModel1.message" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="message">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKRegion806968">
+          <End Role="regioninfo" Type="patternsystemModel1.regioninfo" Multiplicity="1" />
+          <End Role="region" Type="patternsystemModel1.region" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="regioninfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="region">
+              <PropertyRef Name="regionInfoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKUser_Regio731319">
+          <End Role="region" Type="patternsystemModel1.region" Multiplicity="1" />
+          <End Role="user_region" Type="patternsystemModel1.user_region" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="region">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_region">
+              <PropertyRef Name="RegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKRequestToM835124">
+          <End Role="regioninfo" Type="patternsystemModel1.regioninfo" Multiplicity="1" />
+          <End Role="requesttomnger" Type="patternsystemModel1.requesttomnger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="regioninfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="requesttomnger">
+              <PropertyRef Name="regionInfoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKRequestToM984098">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="1" />
+          <End Role="requesttomnger" Type="patternsystemModel1.requesttomnger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="requesttomnger">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="result_ibfk_2">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="result" Type="patternsystemModel1.result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="result">
+              <PropertyRef Name="expert" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKUser_Inven374453">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="1" />
+          <End Role="user_inveniton" Type="patternsystemModel1.user_inveniton" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_inveniton">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKUser_Regio625074">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="1" />
+          <End Role="user_region" Type="patternsystemModel1.user_region" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_region">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="user_company_ibfk_1">
+          <End Role="user" Type="patternsystemModel1.user" Multiplicity="1" />
+          <End Role="user_company" Type="patternsystemModel1.user_company" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="user_company">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="patternsystemModel1StoreContainer" CdmEntityContainer="entities">
+          <EntitySetMapping Name="company"><EntityTypeMapping TypeName="patternsystemModel1.company"><MappingFragment StoreEntitySet="company">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="contact" ColumnName="contact" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="companyfile"><EntityTypeMapping TypeName="patternsystemModel1.companyfile"><MappingFragment StoreEntitySet="companyfile">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="path" ColumnName="path" />
+            <ScalarProperty Name="description" ColumnName="description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="inveniton"><EntityTypeMapping TypeName="patternsystemModel1.inveniton"><MappingFragment StoreEntitySet="inveniton">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="region" ColumnName="region" />
+            <ScalarProperty Name="state" ColumnName="state" />
+            <ScalarProperty Name="owner" ColumnName="owner" />
+            <ScalarProperty Name="inventor" ColumnName="inventor" />
+            <ScalarProperty Name="company" ColumnName="company" />
+            <ScalarProperty Name="currentVersion" ColumnName="currentVersion" />
+            <ScalarProperty Name="dateOfApproved" ColumnName="dateOfApproved" />
+            <ScalarProperty Name="expert" ColumnName="expert" />
+            <ScalarProperty Name="result" ColumnName="result" />
+            <ScalarProperty Name="relatedInvention" ColumnName="relatedInvention" />
+            <ScalarProperty Name="relation" ColumnName="relation" />
+            <ScalarProperty Name="current" ColumnName="current" />
+            <ScalarProperty Name="requested" ColumnName="requested" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="inventionfile"><EntityTypeMapping TypeName="patternsystemModel1.inventionfile"><MappingFragment StoreEntitySet="inventionfile">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="InventionVersionId" ColumnName="InventionVersionId" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="path" ColumnName="path" />
+            <ScalarProperty Name="description" ColumnName="description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="inventionversion"><EntityTypeMapping TypeName="patternsystemModel1.inventionversion"><MappingFragment StoreEntitySet="inventionversion">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="invention" ColumnName="invention" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="description" ColumnName="description" />
+            <ScalarProperty Name="abstract" ColumnName="abstract" />
+            <ScalarProperty Name="background" ColumnName="background" />
+            <ScalarProperty Name="indictment" ColumnName="indictment" />
+            <ScalarProperty Name="comment" ColumnName="comment" />
+            <ScalarProperty Name="date" ColumnName="date" />
+            <ScalarProperty Name="price" ColumnName="price" />
+            <ScalarProperty Name="version" ColumnName="version" />
+            <ScalarProperty Name="author" ColumnName="author" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="message"><EntityTypeMapping TypeName="patternsystemModel1.message"><MappingFragment StoreEntitySet="message">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="userId" ColumnName="userId" />
+            <ScalarProperty Name="message1" ColumnName="message" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="pendinguser"><EntityTypeMapping TypeName="patternsystemModel1.pendinguser"><MappingFragment StoreEntitySet="pendinguser">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="NoN" ColumnName="NoN" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="password" ColumnName="password" />
+            <ScalarProperty Name="firstname" ColumnName="firstname" />
+            <ScalarProperty Name="lastname" ColumnName="lastname" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="properties"><EntityTypeMapping TypeName="patternsystemModel1.properties"><MappingFragment StoreEntitySet="properties">
+            <ScalarProperty Name="Key" ColumnName="Key" />
+            <ScalarProperty Name="Value" ColumnName="Value" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="region"><EntityTypeMapping TypeName="patternsystemModel1.region"><MappingFragment StoreEntitySet="region">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="regionInfoId" ColumnName="regionInfoId" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="regioninfo"><EntityTypeMapping TypeName="patternsystemModel1.regioninfo"><MappingFragment StoreEntitySet="regioninfo">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="description" ColumnName="description" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="requesttomnger"><EntityTypeMapping TypeName="patternsystemModel1.requesttomnger"><MappingFragment StoreEntitySet="requesttomnger">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="userId" ColumnName="userId" />
+            <ScalarProperty Name="result" ColumnName="result" />
+            <ScalarProperty Name="inventionId" ColumnName="inventionId" />
+            <ScalarProperty Name="regionInfoId" ColumnName="regionInfoId" />
+            <ScalarProperty Name="type" ColumnName="type" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="result"><EntityTypeMapping TypeName="patternsystemModel1.result"><MappingFragment StoreEntitySet="result">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="originality" ColumnName="originality" />
+            <ScalarProperty Name="completeDescription" ColumnName="completeDescription" />
+            <ScalarProperty Name="completeDocuments" ColumnName="completeDocuments" />
+            <ScalarProperty Name="indictment" ColumnName="indictment" />
+            <ScalarProperty Name="verifyCompany" ColumnName="verifyCompany" />
+            <ScalarProperty Name="invention" ColumnName="invention" />
+            <ScalarProperty Name="expert" ColumnName="expert" />
+            <ScalarProperty Name="date" ColumnName="date" />
+            <ScalarProperty Name="order" ColumnName="order" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="user"><EntityTypeMapping TypeName="patternsystemModel1.user"><MappingFragment StoreEntitySet="user">
+            <ScalarProperty Name="Id" ColumnName="Id" />
+            <ScalarProperty Name="NoN" ColumnName="NoN" />
+            <ScalarProperty Name="username" ColumnName="username" />
+            <ScalarProperty Name="password" ColumnName="password" />
+            <ScalarProperty Name="role" ColumnName="role" />
+            <ScalarProperty Name="firstname" ColumnName="firstname" />
+            <ScalarProperty Name="lastname" ColumnName="lastname" />
+            <ScalarProperty Name="expert" ColumnName="expert" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="user_company"><EntityTypeMapping TypeName="patternsystemModel1.user_company"><MappingFragment StoreEntitySet="user_company">
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+            <ScalarProperty Name="document" ColumnName="document" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="user_inveniton"><EntityTypeMapping TypeName="patternsystemModel1.user_inveniton"><MappingFragment StoreEntitySet="user_inveniton">
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="InvenitonId" ColumnName="InvenitonId" />
+            <ScalarProperty Name="chert" ColumnName="chert" />
+            <ScalarProperty Name="share" ColumnName="share" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="user_region"><EntityTypeMapping TypeName="patternsystemModel1.user_region"><MappingFragment StoreEntitySet="user_region">
+            <ScalarProperty Name="UserId" ColumnName="UserId" />
+            <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+            <ScalarProperty Name="jafang" ColumnName="jafang" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Database">
+        <EntityTypeShape EntityType="patternsystemModel1.company" Width="1.5" PointX="0.75" PointY="15.875" Height="1.8694466145833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.companyfile" Width="1.5" PointX="3.75" PointY="3.875" Height="1.8694466145833335" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.inveniton" Width="1.5" PointX="3" PointY="10" Height="5.6168221028645853" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.inventionfile" Width="1.5" PointX="10.5" PointY="11.875" Height="2.0478930664062496" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.inventionversion" Width="1.5" PointX="8.25" PointY="10.875" Height="3.8323575846354139" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.message" Width="1.5" PointX="3" PointY="18.375" Height="1.6910001627604174" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.pendinguser" Width="1.5" PointX="0.75" PointY="0.75" Height="2.0478930664062496" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.properties" Width="1.5" PointX="2.75" PointY="0.75" Height="1.3341072591145817" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.region" Width="1.5" PointX="3.75" PointY="6.875" Height="1.8694466145833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.regioninfo" Width="1.5" PointX="1.5" PointY="6.875" Height="1.8694466145833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.requesttomnger" Width="1.5" PointX="5.25" PointY="15.5" Height="2.5832324218750031" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.result" Width="1.5" PointX="8.25" PointY="6.25" Height="3.2970182291666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.user" Width="1.5" PointX="0.75" PointY="10.875" Height="4.0108040364583388" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.user_company" Width="1.5" PointX="6" PointY="11.875" Height="2.0478930664062531" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.user_inveniton" Width="1.5" PointX="8.25" PointY="15.875" Height="2.047893066406246" IsExpanded="true" />
+        <EntityTypeShape EntityType="patternsystemModel1.user_region" Width="1.5" PointX="6" PointY="8.875" Height="1.8694466145833388" IsExpanded="true" />
+        <AssociationConnector Association="patternsystemModel1.inveniton_ibfk_3" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="16.809723307291666" />
+          <ConnectorPoint PointX="2.4166666666666665" PointY="16.809723307291666" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="16.809723307291666" />
+          <ConnectorPoint PointX="3.75" PointY="16.809723307291666" />
+          <ConnectorPoint PointX="3.75" PointY="15.616822102864585" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.user_company_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="16.311109653645833" />
+          <ConnectorPoint PointX="2.4166666666666665" PointY="16.311109653645833" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="16.311109653645833" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="16.311109653645833" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="16.311109653645833" />
+          <ConnectorPoint PointX="5" PointY="16.311109653645833" />
+          <ConnectorPoint PointX="5" PointY="15.25" />
+          <ConnectorPoint PointX="5.041666666666667" PointY="15.25" />
+          <ConnectorPoint PointX="5.208333333333333" PointY="15.25" />
+          <ConnectorPoint PointX="5.354166666666667" PointY="15.25" />
+          <ConnectorPoint PointX="5.520833333333333" PointY="15.25" />
+          <ConnectorPoint PointX="6.75" PointY="15.25" />
+          <ConnectorPoint PointX="6.75" PointY="13.922893066406253" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.user_company_ibfk_3" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="5.7444466145833335" />
+          <ConnectorPoint PointX="5.625" PointY="6.1194466145833335" />
+          <ConnectorPoint PointX="5.625" PointY="12.898946533203127" />
+          <ConnectorPoint PointX="5.666666666666667" PointY="12.898946533203127" />
+          <ConnectorPoint PointX="5.833333333333333" PointY="12.898946533203127" />
+          <ConnectorPoint PointX="6" PointY="12.898946533203127" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKRequestToM55315" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="14.617696533203127" />
+          <ConnectorPoint PointX="5.041666666666667" PointY="14.617696533203127" />
+          <ConnectorPoint PointX="5.208333333333333" PointY="14.617696533203127" />
+          <ConnectorPoint PointX="5.4375" PointY="14.617696533203127" />
+          <ConnectorPoint PointX="5.4375" PointY="15.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKUser_Inven796151" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="11.449473766601564" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="11.449473766601564" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="11.449473766601564" />
+          <ConnectorPoint PointX="5.75" PointY="11.449473766601564" />
+          <ConnectorPoint PointX="5.75" PointY="14.957357584635414" />
+          <ConnectorPoint PointX="6.666666666666667" PointY="14.957357584635414" />
+          <ConnectorPoint PointX="6.833333333333333" PointY="14.957357584635414" />
+          <ConnectorPoint PointX="9" PointY="14.957357584635414" />
+          <ConnectorPoint PointX="9" PointY="15.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.inveniton_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.125" PointY="8.7444466145833317" />
+          <ConnectorPoint PointX="4.125" PointY="10" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.inveniton_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="12.880402018229169" />
+          <ConnectorPoint PointX="2.6979166666666665" PointY="12.880402018229169" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="12.880402018229169" />
+          <ConnectorPoint PointX="3" PointY="12.880402018229169" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.inveniton_ibfk_4" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.25" PointY="14.23904479980469" />
+          <ConnectorPoint PointX="6.833333333333333" PointY="14.23904479980469" />
+          <ConnectorPoint PointX="6.666666666666667" PointY="14.23904479980469" />
+          <ConnectorPoint PointX="5.833333333333333" PointY="14.23904479980469" />
+          <ConnectorPoint PointX="5.666666666666667" PointY="14.23904479980469" />
+          <ConnectorPoint PointX="5.208333333333333" PointY="14.23904479980469" />
+          <ConnectorPoint PointX="5.041666666666667" PointY="14.23904479980469" />
+          <ConnectorPoint PointX="4.5" PointY="14.23904479980469" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.inveniton_ibfk_5" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="11.815201009114585" />
+          <ConnectorPoint PointX="2.6979166666666665" PointY="11.815201009114585" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="11.815201009114585" />
+          <ConnectorPoint PointX="3" PointY="11.815201009114585" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.inveniton_ibfk_6" ManuallyRouted="false">
+          <ConnectorPoint PointX="8.25" PointY="6.53125" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="6.5312499999999991" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="6.53125" />
+          <ConnectorPoint PointX="3.375" PointY="6.53125" />
+          <ConnectorPoint PointX="3.375" PointY="10" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.inveniton_ibfk_7" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5319230769230767" PointY="15.616822102864585" />
+          <ConnectorPoint PointX="3.5319230769230767" PointY="15.866822102864585" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="15.866822102864585" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="15.866822102864585" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="15.866822102864585" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="15.616822102864585" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.inventionversion_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="11.099736883300782" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="11.099736883300782" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="11.099736883300782" />
+          <ConnectorPoint PointX="5.791666666666667" PointY="11.099736883300782" />
+          <ConnectorPoint PointX="5.958333333333333" PointY="11.099736883300782" />
+          <ConnectorPoint PointX="8.25" PointY="11.099736883300782" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.result_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5625025" PointY="10" />
+          <ConnectorPoint PointX="3.5625025" PointY="6.7031274999999937" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="6.7031274999999928" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="6.7031274999999937" />
+          <ConnectorPoint PointX="8.25" PointY="6.7031274999999937" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKInventionF241640" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.75" PointY="12.898946533203125" />
+          <ConnectorPoint PointX="10.5" PointY="12.898946533203125" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.inventionversion_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="10.875" />
+          <ConnectorPoint PointX="1.5" PointY="9.75" />
+          <ConnectorPoint PointX="1.8229191666666667" PointY="9.75" />
+          <ConnectorPoint PointX="1.9895858333333332" PointY="9.75" />
+          <ConnectorPoint PointX="2.6979166666666665" PointY="9.75" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="9.75" />
+          <ConnectorPoint PointX="3.2916666666666665" PointY="9.75" />
+          <ConnectorPoint PointX="3.4583333333333335" PointY="9.75" />
+          <ConnectorPoint PointX="3.4791691666666664" PointY="9.75" />
+          <ConnectorPoint PointX="3.6458358333333334" PointY="9.75" />
+          <ConnectorPoint PointX="4.041666666666667" PointY="9.75" />
+          <ConnectorPoint PointX="4.208333333333333" PointY="9.75" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="9.75" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="9.75" />
+          <ConnectorPoint PointX="5.875" PointY="9.75" />
+          <ConnectorPoint PointX="5.875" PointY="11.625" />
+          <ConnectorPoint PointX="7.875" PointY="11.625" />
+          <ConnectorPoint PointX="7.875" PointY="12.669390841552737" />
+          <ConnectorPoint PointX="8.25" PointY="12.669390841552737" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.message_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.2499999999999996" PointY="14.885804036458339" />
+          <ConnectorPoint PointX="2.3160744349011213" PointY="14.951878471359459" />
+          <ConnectorPoint PointX="2.4339255650988791" PointY="15.069729601557217" />
+          <ConnectorPoint PointX="2.625" PointY="15.260804036458339" />
+          <ConnectorPoint PointX="2.625" PointY="19.220500081380209" />
+          <ConnectorPoint PointX="3" PointY="19.220500081380209" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKRegion806968" ManuallyRouted="false">
+          <ConnectorPoint PointX="3" PointY="7.8097233072916659" />
+          <ConnectorPoint PointX="3.2916666666666665" PointY="7.809723307291665" />
+          <ConnectorPoint PointX="3.4583333333333335" PointY="7.8097233072916659" />
+          <ConnectorPoint PointX="3.4791691666666664" PointY="7.809723307291665" />
+          <ConnectorPoint PointX="3.6458358333333334" PointY="7.8097233072916659" />
+          <ConnectorPoint PointX="3.75" PointY="7.8097233072916659" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKUser_Regio731319" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="7.8097233072916659" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="7.809723307291665" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="7.8097233072916659" />
+          <ConnectorPoint PointX="6.75" PointY="7.8097233072916659" />
+          <ConnectorPoint PointX="6.75" PointY="8.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKRequestToM835124" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.78125" PointY="8.7444466145833317" />
+          <ConnectorPoint PointX="2.78125" PointY="17.945089518229167" />
+          <ConnectorPoint PointX="5.25" PointY="17.945089518229167" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKRequestToM984098" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.4687479999999997" PointY="14.885804036458339" />
+          <ConnectorPoint PointX="1.4687479999999997" PointY="15.625" />
+          <ConnectorPoint PointX="2.2916666666666665" PointY="15.625" />
+          <ConnectorPoint PointX="2.4583333333333335" PointY="15.625" />
+          <ConnectorPoint PointX="2.5" PointY="15.625" />
+          <ConnectorPoint PointX="2.5" PointY="17.346153912760414" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="17.346153912760414" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="17.346153912760414" />
+          <ConnectorPoint PointX="5.25" PointY="17.346153912760414" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.result_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.09375" PointY="10.875" />
+          <ConnectorPoint PointX="1.09375" PointY="6.3593725000000063" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="6.3593725000000054" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="6.3593725000000063" />
+          <ConnectorPoint PointX="8.25" PointY="6.3593725000000063" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKUser_Inven374453" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="13.883103027343754" />
+          <ConnectorPoint PointX="2.375" PointY="13.883103027343754" />
+          <ConnectorPoint PointX="2.375" PointY="15.859009602864585" />
+          <ConnectorPoint PointX="2.4166666666666665" PointY="15.859009602864584" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="15.859009602864585" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="15.859009602864585" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="15.859009602864585" />
+          <ConnectorPoint PointX="4.75" PointY="15.859009602864585" />
+          <ConnectorPoint PointX="4.75" PointY="15.082357584635414" />
+          <ConnectorPoint PointX="5.041666666666667" PointY="15.082357584635414" />
+          <ConnectorPoint PointX="5.208333333333333" PointY="15.082357584635414" />
+          <ConnectorPoint PointX="5.354166666666667" PointY="15.082357584635414" />
+          <ConnectorPoint PointX="5.520833333333333" PointY="15.082357584635414" />
+          <ConnectorPoint PointX="6.666666666666667" PointY="15.082357584635414" />
+          <ConnectorPoint PointX="6.833333333333333" PointY="15.082357584635414" />
+          <ConnectorPoint PointX="8.593748" PointY="15.082357584635414" />
+          <ConnectorPoint PointX="8.593748" PointY="15.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.FKUser_Regio625074" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.9062525" PointY="10.875" />
+          <ConnectorPoint PointX="1.9062525" PointY="9.3125" />
+          <ConnectorPoint PointX="2.6979166666666665" PointY="9.3125" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="9.3125" />
+          <ConnectorPoint PointX="3.2916666666666665" PointY="9.3125" />
+          <ConnectorPoint PointX="3.4583333333333335" PointY="9.3125" />
+          <ConnectorPoint PointX="3.4791691666666664" PointY="9.3125" />
+          <ConnectorPoint PointX="3.6458358333333334" PointY="9.3125" />
+          <ConnectorPoint PointX="4.041666666666667" PointY="9.3125" />
+          <ConnectorPoint PointX="4.208333333333333" PointY="9.3125" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="9.3125" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="9.3125" />
+          <ConnectorPoint PointX="6" PointY="9.3125" />
+        </AssociationConnector>
+        <AssociationConnector Association="patternsystemModel1.user_company_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.8593739999999994" PointY="14.885804036458339" />
+          <ConnectorPoint PointX="1.8593739999999994" PointY="15.135804036458339" />
+          <ConnectorPoint PointX="2.2916666666666665" PointY="15.135804036458337" />
+          <ConnectorPoint PointX="2.5833333333333335" PointY="15.135804036458339" />
+          <ConnectorPoint PointX="2.6875" PointY="15.135804036458339" />
+          <ConnectorPoint PointX="2.6875" PointY="15.991822102864585" />
+          <ConnectorPoint PointX="2.6979166666666665" PointY="15.991822102864585" />
+          <ConnectorPoint PointX="2.8645833333333335" PointY="15.991822102864585" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="15.991822102864585" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="15.991822102864585" />
+          <ConnectorPoint PointX="4.916666666666667" PointY="15.991822102864585" />
+          <ConnectorPoint PointX="5.083333333333333" PointY="15.991822102864585" />
+          <ConnectorPoint PointX="5.125" PointY="15.991822102864585" />
+          <ConnectorPoint PointX="5.125" PointY="12.355721266601563" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="12.355721266601561" />
+          <ConnectorPoint PointX="5.833333333333333" PointY="12.355721266601563" />
+          <ConnectorPoint PointX="6" PointY="12.355721266601563" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

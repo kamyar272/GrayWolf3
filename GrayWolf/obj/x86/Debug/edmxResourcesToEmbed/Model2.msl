@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="patternsystemINVStoreContainer" CdmEntityContainer="patternsystemEntities1">
+    <EntitySetMapping Name="invenitons">
+      <EntityTypeMapping TypeName="patternsystemINV.inveniton">
+        <MappingFragment StoreEntitySet="inveniton">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="inventor" ColumnName="inventor" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="currentVersion" ColumnName="currentVersion" />
+          <ScalarProperty Name="dateOfApproved" ColumnName="dateOfApproved" />
+          <ScalarProperty Name="expert" ColumnName="expert" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="relatedInvention" ColumnName="relatedInvention" />
+          <ScalarProperty Name="relation" ColumnName="relation" />
+          <ScalarProperty Name="current" ColumnName="current" />
+          <ScalarProperty Name="requested" ColumnName="requested" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

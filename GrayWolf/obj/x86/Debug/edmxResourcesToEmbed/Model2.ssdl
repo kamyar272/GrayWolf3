@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="patternsystemINV.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="patternsystemINVStoreContainer">
+    <EntitySet Name="inveniton" EntityType="patternsystemINV.Store.inveniton" store:Type="Tables" Schema="patternsystem" />
+    <AssociationSet Name="inveniton_ibfk_7" Association="patternsystemINV.Store.inveniton_ibfk_7">
+      <End Role="inveniton" EntitySet="inveniton" />
+      <End Role="inveniton1" EntitySet="inveniton" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="inveniton">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="region" Type="int" Nullable="false" />
+    <Property Name="state" Type="int" />
+    <Property Name="owner" Type="int" />
+    <Property Name="inventor" Type="int" Nullable="false" />
+    <Property Name="company" Type="int" />
+    <Property Name="currentVersion" Type="int" />
+    <Property Name="dateOfApproved" Type="timestamp" Precision="0" />
+    <Property Name="expert" Type="int" />
+    <Property Name="result" Type="int" />
+    <Property Name="relatedInvention" Type="int" />
+    <Property Name="relation" Type="varchar" MaxLength="100" />
+    <Property Name="current" Type="int" Nullable="false" />
+    <Property Name="requested" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="inveniton_ibfk_7">
+    <End Role="inveniton" Type="patternsystemINV.Store.inveniton" Multiplicity="0..1" />
+    <End Role="inveniton1" Type="patternsystemINV.Store.inveniton" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inveniton">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inveniton1">
+        <PropertyRef Name="relatedInvention" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,15 +1,11 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using GrayWolf.DB;
 using Graywolf;
 
-namespace GrayWolf
+namespace GrayWolf.UI
 {
     public partial class loginFrame : Form
     {
@@ -20,6 +16,13 @@ namespace GrayWolf
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DB.entities entity = new DB.entities();
+            user newUser = new user();
+            newUser.NoN = 1090001010;
+            entity.user.AddObject(newUser);
+            entity.SaveChanges();
+            MessageBox.Show("added");
+
             string remived;
             string user = textBox1.Text;
             string pass = textBox2.Text;

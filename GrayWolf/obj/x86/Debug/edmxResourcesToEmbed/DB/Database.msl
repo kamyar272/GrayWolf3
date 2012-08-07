@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="patternsystemModel1StoreContainer" CdmEntityContainer="entities">
+    <EntitySetMapping Name="company">
+      <EntityTypeMapping TypeName="patternsystemModel1.company">
+        <MappingFragment StoreEntitySet="company">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="companyfile">
+      <EntityTypeMapping TypeName="patternsystemModel1.companyfile">
+        <MappingFragment StoreEntitySet="companyfile">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inveniton">
+      <EntityTypeMapping TypeName="patternsystemModel1.inveniton">
+        <MappingFragment StoreEntitySet="inveniton">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="region" ColumnName="region" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="owner" ColumnName="owner" />
+          <ScalarProperty Name="inventor" ColumnName="inventor" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="currentVersion" ColumnName="currentVersion" />
+          <ScalarProperty Name="dateOfApproved" ColumnName="dateOfApproved" />
+          <ScalarProperty Name="expert" ColumnName="expert" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="relatedInvention" ColumnName="relatedInvention" />
+          <ScalarProperty Name="relation" ColumnName="relation" />
+          <ScalarProperty Name="current" ColumnName="current" />
+          <ScalarProperty Name="requested" ColumnName="requested" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inventionfile">
+      <EntityTypeMapping TypeName="patternsystemModel1.inventionfile">
+        <MappingFragment StoreEntitySet="inventionfile">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InventionVersionId" ColumnName="InventionVersionId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inventionversion">
+      <EntityTypeMapping TypeName="patternsystemModel1.inventionversion">
+        <MappingFragment StoreEntitySet="inventionversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="invention" ColumnName="invention" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="abstract" ColumnName="abstract" />
+          <ScalarProperty Name="background" ColumnName="background" />
+          <ScalarProperty Name="indictment" ColumnName="indictment" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="author" ColumnName="author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="message">
+      <EntityTypeMapping TypeName="patternsystemModel1.message">
+        <MappingFragment StoreEntitySet="message">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="message1" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pendinguser">
+      <EntityTypeMapping TypeName="patternsystemModel1.pendinguser">
+        <MappingFragment StoreEntitySet="pendinguser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NoN" ColumnName="NoN" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="properties">
+      <EntityTypeMapping TypeName="patternsystemModel1.properties">
+        <MappingFragment StoreEntitySet="properties">
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="region">
+      <EntityTypeMapping TypeName="patternsystemModel1.region">
+        <MappingFragment StoreEntitySet="region">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="regionInfoId" ColumnName="regionInfoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="regioninfo">
+      <EntityTypeMapping TypeName="patternsystemModel1.regioninfo">
+        <MappingFragment StoreEntitySet="regioninfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="requesttomnger">
+      <EntityTypeMapping TypeName="patternsystemModel1.requesttomnger">
+        <MappingFragment StoreEntitySet="requesttomnger">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="inventionId" ColumnName="inventionId" />
+          <ScalarProperty Name="regionInfoId" ColumnName="regionInfoId" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="result">
+      <EntityTypeMapping TypeName="patternsystemModel1.result">
+        <MappingFragment StoreEntitySet="result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="originality" ColumnName="originality" />
+          <ScalarProperty Name="completeDescription" ColumnName="completeDescription" />
+          <ScalarProperty Name="completeDocuments" ColumnName="completeDocuments" />
+          <ScalarProperty Name="indictment" ColumnName="indictment" />
+          <ScalarProperty Name="verifyCompany" ColumnName="verifyCompany" />
+          <ScalarProperty Name="invention" ColumnName="invention" />
+          <ScalarProperty Name="expert" ColumnName="expert" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="order" ColumnName="order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="patternsystemModel1.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NoN" ColumnName="NoN" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="expert" ColumnName="expert" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_company">
+      <EntityTypeMapping TypeName="patternsystemModel1.user_company">
+        <MappingFragment StoreEntitySet="user_company">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="document" ColumnName="document" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_inveniton">
+      <EntityTypeMapping TypeName="patternsystemModel1.user_inveniton">
+        <MappingFragment StoreEntitySet="user_inveniton">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="InvenitonId" ColumnName="InvenitonId" />
+          <ScalarProperty Name="chert" ColumnName="chert" />
+          <ScalarProperty Name="share" ColumnName="share" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_region">
+      <EntityTypeMapping TypeName="patternsystemModel1.user_region">
+        <MappingFragment StoreEntitySet="user_region">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="jafang" ColumnName="jafang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
